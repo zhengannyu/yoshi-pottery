@@ -1,11 +1,4 @@
-.bg-secondary {
-  background: $secondary-color;
-}
-
-.bg-secondary-dark {
-  background: $secondary-color-dark;
-}
-
+//theme-color
 .primary-color {
   color: $primary-color;
 }
@@ -16,6 +9,14 @@
 
 .dark-color {
   color: $dark-color;
+}
+
+.bg-secondary {
+  background: $secondary-color;
+}
+
+.bg-secondary-dark {
+  background: $secondary-color-dark;
 }
 
 //space
@@ -37,49 +38,41 @@ $sp-4: 4px;
 //width
 .w-30 {
   width: 30%;
-
 }
 
 .w-35 {
   width: 35%;
-
 }
 
 .w-40 {
   width: 40%;
-
 }
 
 .w-45 {
   width: 45%;
-
 }
 
 .w-50 {
   width: 50%;
-
 }
 
 .w-60 {
   width: 60%;
-
 }
 
 .w-65 {
   width: 65%;
-
 }
 
 .w-70 {
   width: 70%;
 }
 
-// .container {
-//   width: 90%;
-//   max-width: 1200px;
-//   padding: 0 $sp-32;
-//   margin: 0 auto;
-// }
+.container {
+  width: 90%;
+  // padding: 0 $sp-32;
+  margin: 0 auto;
+}
 
 .w-100 {
   width: 100%;
@@ -111,4 +104,10 @@ $sp-4: 4px;
 
 .grid {
   display: grid;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1500px;
+  }
 }

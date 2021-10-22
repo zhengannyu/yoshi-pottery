@@ -14,7 +14,13 @@
   <title>藝術陶｜又煦陶作</title>
 </head>
 
-<body>
+<body onload="followMouse();">
+  <!-- Follow Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-wrap">
+    <div id="ball"></div>
+  </div>
+  <!-- Follow Cursor -->
   <!-- NAVBAR -->
   <header>
     <nav class="navbar">
@@ -104,18 +110,18 @@
   <footer class="footer">
     <div class="container-footer">
       <!-- sitemap -->
-      <ul class="sitemap">
-        <li><a href="arts.html">藝術陶</a></li>
-        <li><a href="works.html">生活陶</a></li>
-        <li><a href="class.html">課程教學</a></li>
-        <li><a href="contact.html">聯絡我們</a></li>
-      </ul>
+      <div class="sitemap">
+        <a href="arts.html">藝術陶</a>
+        <a href="works.html">生活陶</a>
+        <a href="class.html">課程教學</a>
+        <a href="contact.html">聯絡我們</a>
+      </div>
       <!-- info -->
-      <ul class="info-box">
-        <li><a class="label" href="">950<br>台東縣台東市杭州街118號1樓</a></li>
-        <a class="roboto" href="">(+886) 921-271-867</a><br>
+      <div class="info-box">
+        <a class="label" href="">950<br>台東縣台東市杭州街118號1樓</a>
+        <a class="roboto" href="">(+886) 921-271-867</a>
         <a class="roboto" href="">yoshipottery@gmail.com</a>
-      </ul>
+      </div>
       <!-- brand -->
       <div class="brandbox dark-color">
         <div class="follow-box">
@@ -133,6 +139,7 @@
   </footer>
   <!-- FOOTER -->
 
+  <script src="./js/follow-cursor.js"></script>
   <script src="./js/line-scroll.js"></script>
 </body>
 

@@ -17,19 +17,40 @@
 </head>
 
 <body>
+  <!-- Follow Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-wrap">
+    <div id="ball"></div>
+  </div>
+  <!-- Follow Cursor -->
   <!-- NAVBAR -->
   <header>
     <nav class="navbar">
-      <a href="index.html"><img src="./assets/logo1.svg" alt=""></a>
-      <div class="navlink-wrap">
-        <li class="navlink"><a href="arts.html">藝術陶</a></li>
-        <li class="navlink"><a href="works.html">生活陶</a></li>
-        <li class="navlink"><a href="class.html">課程教學</a></li>
-        <li class="navlink"><a href="contact.html">聯絡我們</a></li>
-        <div class="menu-box">
+      <div class="container-navbar">
+        <!-- brand -->
+        <a class="navbar-brand" href="index.html"><img src="./assets/logo1.svg" alt=""></a>
+        <!-- Navlink-list -->
+        <div class="navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navlink" href="arts.html">藝術陶</a>
+            </li>
+            <li class="nav-item">
+              <a class="navlink" href="works.html">生活陶</a>
+            </li>
+            <li class="nav-item">
+              <a class="navlink" href="class.html">課程教學</a>
+            </li>
+            <li class="nav-item">
+              <a class="navlink" href="contact.html">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+        <!-- menu-btn -->
+        <button class="navbar-toggler" type="button">
           <div class="line-1"></div>
           <div class="line-2"></div>
-        </div>
+        </button>
       </div>
     </nav>
   </header>
@@ -236,21 +257,25 @@
 
 
   </div>
+
   <!-- FOOTER -->
-  <footer>
-    <div class="container label dark-color footer-wrap">
-      <ul>
-        <li><a href="arts.html">藝術陶</a></li>
-        <li><a href="works.html">生活陶</a></li>
-        <li><a href="class.html">課程教學</a></li>
-        <li><a href="contact.html">聯絡我們</a></li>
-      </ul>
-      <ul class="info-box">
-        <li><a href="">950<br>台東縣台東市杭州街118號1樓</a></li>
-        <a href="" class="roboto">(+886) 921-271-867</a><br>
-        <a href="" class="roboto">yoshipottery@gmail.com</a>
-      </ul>
-      <div class="footer-brandbox">
+  <footer class="footer">
+    <div class="container-footer">
+      <!-- sitemap -->
+      <div class="sitemap">
+        <a href="arts.html">藝術陶</a>
+        <a href="works.html">生活陶</a>
+        <a href="class.html">課程教學</a>
+        <a href="contact.html">聯絡我們</a>
+      </div>
+      <!-- info -->
+      <div class="info-box">
+        <a class="label" href="">950<br>台東縣台東市杭州街118號1樓</a>
+        <a class="roboto" href="">(+886) 921-271-867</a>
+        <a class="roboto" href="">yoshipottery@gmail.com</a>
+      </div>
+      <!-- brand -->
+      <div class="brandbox dark-color">
         <div class="follow-box">
           <a href="https://www.instagram.com/yoshipottery/" target=_blank class="ig"><img src="./assets/instagram.svg"
               alt=""></a>

@@ -1,3 +1,5 @@
+//RWD  ---OK
+
 //works-banner
 .work-banner {
   height: 580px;
@@ -8,11 +10,12 @@
 //title-box
 .work-title-wrap {
   margin: -100px 0 100px 0;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
 
   .work-title-box {
     padding: 35px 60px;
+    margin-right: 50px;
     background-color: $secondary-color;
     text-align: center;
 
@@ -55,5 +58,62 @@
 
   h6 {
     margin: 10px 0px 10px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .work-banner {
+    height: 500px;
+  }
+
+  .work-title-wrap {
+    margin: -60px 0 100px 0;
+    flex-flow: row nowrap;
+
+    .work-title-box {
+      padding: 35px 30px;
+      margin-right: 20px;
+
+      h3 {
+        margin: 20px 0px;
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .work-banner {
+    height: 500px;
+  }
+
+  .work-title-wrap {
+    margin: -60px auto 60px auto;
+    height: auto;
+    flex-flow: column nowrap;
+
+    .work-title-box {
+      margin: 0 auto;
+      padding: 35px 30px;
+      // margin-right: 20px;
+
+      h3 {
+        // margin: 20px 0px;
+        font-size: 36px;
+      }
+    }
+
+    .w-50 {
+      margin: 20px auto;
+      width: 85%;
+      text-align: center;
+    }
+  }
+
+  .works-series-wrap {
+    .w-45 {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 }

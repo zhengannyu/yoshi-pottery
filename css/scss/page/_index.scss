@@ -196,9 +196,13 @@
     justify-content: flex-start;
     align-items: center;
 
+    span {
+      padding-top: 6px;
+    }
+
     .ig {
       margin-left: 40px;
-      margin-right: 10px;
+      margin-right: 15px;
     }
 
     .fb {

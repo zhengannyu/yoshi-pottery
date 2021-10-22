@@ -1,9 +1,17 @@
-/* zh */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@2s00;300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
-/* en */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+// 中文字體
+// font-family: 'Noto Serif JP', serif; 明體
+// 300 大部分字體、內文
+// 500 H3大標題
+
+// font-family: 'Noto Sans JP', sans-serif; 黑體 
+// 300 H1標題 / Footer / 按鈕
+
+// 英數
+// font-family: 'Noto Serif Display', serif; 英文字體
+// 300 italic H2大英文標題
+
+// font-family: 'Roboto', sans-serif; 
+// 300 價格 / copyright / 電話 / email
 
 //text-align
 $align-center: center;
@@ -29,7 +37,7 @@ p {
 }
 
 h1 {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1;
@@ -38,9 +46,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Noto Serif Display', serif;
   font-size: 144px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1;
   letter-spacing: 10px;
   color: #F5F5F5;
@@ -65,6 +73,7 @@ h5 {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.75;
+  letter-spacing: 4px;
 }
 
 h6 {
@@ -75,32 +84,38 @@ h6 {
 }
 
 p {
-  font-family: 'Noto Serif TC', serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
+  letter-spacing: 1px;
 }
 
 .price-text {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
   letter-spacing: 3px;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
 }
 
 .caption {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
 }
 
 .label {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
+  letter-spacing: 2px;
 }
 
 //component

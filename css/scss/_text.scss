@@ -136,10 +136,42 @@ p {
   }
 }
 
-.copyright {
+// .copyright {
+//   position: fixed;
+//   top: 60%;
+//   right: -5%;
+//   transform: rotate(90deg);
+//   z-index: 9;
+// }
+
+.left-fixed {
   position: fixed;
-  top: 60%;
-  right: -5%;
+  right: 20px;
+  padding: 8px;
+  text-align: center;
+  z-index: 99;
   transform: rotate(90deg);
-  z-index: 9;
+
+  .copyright {
+    display: block;
+    position: absolute;
+    width: 100vh;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .left-fixed {
+    right: 0px;
+    text-align: center;
+    z-index: 99;
+    transform: rotate(90deg);
+
+    .copyright {
+      display: block;
+      position: absolute;
+      width: 100vh;
+      font-size: 12px;
+    }
+  }
 }

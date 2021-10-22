@@ -96,13 +96,6 @@ video {
   width: 70%;
 }
 
-.container {
-  width: 80%;
-  max-width: 1200px;
-  padding: 0 32px;
-  margin: 0 auto;
-}
-
 .w-100 {
   width: 100%;
 }
@@ -129,6 +122,18 @@ video {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+}
+
+.between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .grid {
@@ -250,13 +255,37 @@ p {
   bottom: 20px;
 }
 
-.copyright {
+.left-fixed {
   position: fixed;
-  top: 60%;
-  right: -5%;
+  right: 20px;
+  padding: 8px;
+  text-align: center;
+  z-index: 99;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  z-index: 9;
+}
+
+.left-fixed .copyright {
+  display: block;
+  position: absolute;
+  width: 100vh;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .left-fixed {
+    right: 0px;
+    text-align: center;
+    z-index: 99;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .left-fixed .copyright {
+    display: block;
+    position: absolute;
+    width: 100vh;
+    font-size: 12px;
+  }
 }
 
 .btn {
@@ -348,10 +377,18 @@ p {
 }
 
 .navbar {
-  padding: 20px 3%;
   width: 100vw;
   position: fixed;
   top: 0%;
+  z-index: 9;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.navbar .container-navbar {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,12 +398,13 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 9;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
 }
 
-.navbar .navlink-wrap {
+.navbar .container-navbar .navbar-brand {
+  margin-right: auto;
+}
+
+.navbar .container-navbar .navbar-collapse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,38 +413,58 @@ p {
           justify-content: flex-end;
 }
 
-.navbar .navlink {
-  padding: 0px 30px;
+.navbar .container-navbar .navbar-collapse .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.navbar .navlink a {
+.navbar .container-navbar .navbar-collapse .navbar-nav .nav-item .navlink {
+  padding: 16px 30px;
   letter-spacing: 2px;
 }
 
-.navbar .menu-box {
-  margin-left: 50px;
+.navbar .container-navbar .navbar-toggler {
+  margin-left: 30px;
+  border: none;
+  background-color: transparent;
 }
 
-.navbar .line-1 {
+.navbar .container-navbar .navbar-toggler .line-1 {
   width: 24px;
   height: 1px;
   background-color: #6C4D41;
   margin-top: 1px;
 }
 
-.navbar .line-2 {
+.navbar .container-navbar .navbar-toggler .line-2 {
   width: 24px;
   height: 1px;
   background-color: #6C4D41;
   margin-top: 11px;
 }
 
-footer {
+@media screen and (max-width: 767.98px) {
+  .container-navbar {
+    display: none !important;
+  }
+}
+
+.footer {
   padding: 64px 0px;
   background-color: #F9F9F9;
 }
 
-footer .footer-wrap {
+.footer .container-footer {
+  width: 90%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,16 +480,14 @@ footer .footer-wrap {
           align-items: flex-start;
 }
 
-footer .footer-wrap li {
-  margin: 16px 0;
-}
-
-footer .footer-wrap li a {
+.footer .container-footer a {
+  display: inline-block;
+  padding: 8px 0;
   color: #3C363B;
   letter-spacing: 2px;
 }
 
-footer .footer-wrap .footer-brandbox {
+.footer .container-footer .brandbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,7 +503,7 @@ footer .footer-wrap .footer-brandbox {
           align-items: flex-end;
 }
 
-footer .footer-wrap .footer-brandbox .follow-box {
+.footer .container-footer .brandbox .follow-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,24 +515,48 @@ footer .footer-wrap .footer-brandbox .follow-box {
           align-items: center;
 }
 
-footer .footer-wrap .footer-brandbox .follow-box .ig {
+.footer .container-footer .brandbox .follow-box .ig {
   margin-left: 40px;
   margin-right: 15px;
   line-height: 1;
 }
 
-footer .footer-wrap .footer-brandbox .follow-box .fb {
+.footer .container-footer .brandbox .follow-box .fb {
   margin-left: 10px;
   line-height: 1;
 }
 
-footer .footer-wrap .footer-brandbox h4 {
+.footer .container-footer .brandbox h4 {
   font-family: 'Cormorant Garamond';
   font-size: 54px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .container-footer .sitmap {
+    width: 30%;
+  }
+  .container-footer .info-box {
+    width: 40%;
+  }
 }
 
 .menu-section {
@@ -838,9 +918,10 @@ footer .footer-wrap .footer-brandbox h4 {
 
 .display-title {
   position: fixed;
-  top: 5%;
+  top: 120px;
   right: -1300px;
   font-size: 288px;
+  color: #E6DFD9;
   white-space: nowrap;
   z-index: -1;
 }
@@ -884,6 +965,35 @@ footer .footer-wrap .footer-brandbox h4 {
 
 .arts-card-6 {
   margin: 250px 0px 0px 0px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .display-title {
+    display: none;
+  }
+  .art-title {
+    margin: 120px 0px 0px 0px;
+  }
+  .wrap-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .wrap-row .w-30,
+  .wrap-row .w-40 {
+    width: 100%;
+  }
+  .art-wrap {
+    margin-bottom: 100px;
+  }
+  .arts-card-1,
+  .arts-card-3,
+  .arts-card-4,
+  .arts-card-5,
+  .arts-card-6 {
+    margin: 40px 0;
+  }
 }
 
 .work-banner {

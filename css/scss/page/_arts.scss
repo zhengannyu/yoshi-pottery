@@ -1,8 +1,11 @@
+//RWD ---OK
+
 .display-title {
   position: fixed;
-  top: 5%;
+  top: 120px;
   right: -1300px;
   font-size: 288px;
+  color: $secondary-color;
   white-space: nowrap;
   z-index: -1;
 }
@@ -43,4 +46,35 @@
 
 .arts-card-6 {
   margin: 250px 0px 0px 0px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .display-title {
+    display: none;
+  }
+
+  .art-title {
+    margin: 120px 0px 0px 0px;
+  }
+
+  .wrap-row {
+    flex-flow: column wrap;
+
+    .w-30,
+    .w-40 {
+      width: 100%;
+    }
+  }
+
+  .art-wrap {
+    margin-bottom: 100px;
+  }
+
+  .arts-card-1,
+  .arts-card-3,
+  .arts-card-4,
+  .arts-card-5,
+  .arts-card-6 {
+    margin: 40px 0;
+  }
 }

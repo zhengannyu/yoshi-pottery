@@ -74,12 +74,12 @@ $sp-4: 4px;
   width: 70%;
 }
 
-.container {
-  width: 80%;
-  max-width: 1200px;
-  padding: 0 $sp-32;
-  margin: 0 auto;
-}
+// .container {
+//   width: 90%;
+//   max-width: 1200px;
+//   padding: 0 $sp-32;
+//   margin: 0 auto;
+// }
 
 .w-100 {
   width: 100%;
@@ -99,6 +99,15 @@ $sp-4: 4px;
   display: flex;
   flex-flow: column wrap;
 }
+
+.between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
 
 .grid {
   display: grid;

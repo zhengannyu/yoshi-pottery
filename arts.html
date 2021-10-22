@@ -16,22 +16,42 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar">
-    <a href="index.html"><img src="./assets/logo1.svg" alt=""></a>
-    <div class="navlink-wrap">
-      <li class="navlink"><a href="arts.html">藝術陶</a></li>
-      <li class="navlink"><a href="works.html">生活陶</a></li>
-      <li class="navlink"><a href="class.html">課程教學</a></li>
-      <li class="navlink"><a href="contact.html">聯絡我們</a></li>
-      <div class="menu-box">
-        <div class="line-1"></div>
-        <div class="line-2"></div>
+  <header>
+    <nav class="navbar">
+      <div class="container-navbar">
+        <!-- brand -->
+        <a class="navbar-brand" href="index.html"><img src="./assets/logo1.svg" alt=""></a>
+        <!-- Navlink-list -->
+        <div class="navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navlink" href="arts.html">藝術陶</a>
+            </li>
+            <li class="nav-item">
+              <a class="navlink" href="works.html">生活陶</a>
+            </li>
+            <li class="nav-item">
+              <a class="navlink" href="class.html">課程教學</a>
+            </li>
+            <li class="nav-item">
+              <a class="navlink" href="contact.html">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+        <!-- menu-btn -->
+        <button class="navbar-toggler" type="button">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+        </button>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   <!-- NAVBAR -->
   <main>
-    <h2 class="display-title">ART POTTERY</h2>
+    <div class="left-fixed">
+      <p class="copyright roboto">© YOSHIPOTTERY ALL RIGHTS RESERVED.</p>
+    </div>
+    <h2 class="display-title">Art Pottery</h2>
     <h3 class="art-title align-center">藝術陶</h3>
     <div class="art-wrap wrap-row">
       <div class="w-30 px-24 arts-card arts-card-1">
@@ -81,20 +101,23 @@
   </main>
   <!-- CONTAINER -->
   <!-- FOOTER -->
-  <footer>
-    <div class="container label dark-color footer-wrap">
-      <ul>
+  <footer class="footer">
+    <div class="container-footer">
+      <!-- sitemap -->
+      <ul class="sitemap">
         <li><a href="arts.html">藝術陶</a></li>
         <li><a href="works.html">生活陶</a></li>
         <li><a href="class.html">課程教學</a></li>
         <li><a href="contact.html">聯絡我們</a></li>
       </ul>
+      <!-- info -->
       <ul class="info-box">
-        <li><a href="">950<br>台東縣台東市杭州街118號1樓</a></li>
-        <a href="" class="roboto">(+886) 921-271-867</a><br>
-        <a href="" class="roboto">yoshipottery@gmail.com</a>
+        <li><a class="label" href="">950<br>台東縣台東市杭州街118號1樓</a></li>
+        <a class="roboto" href="">(+886) 921-271-867</a><br>
+        <a class="roboto" href="">yoshipottery@gmail.com</a>
       </ul>
-      <div class="footer-brandbox">
+      <!-- brand -->
+      <div class="brandbox dark-color">
         <div class="follow-box">
           <a href="https://www.instagram.com/yoshipottery/" target=_blank class="ig"><img src="./assets/instagram.svg"
               alt=""></a>
@@ -110,6 +133,7 @@
   </footer>
   <!-- FOOTER -->
 
+  <script src="./js/line-scroll.js"></script>
 </body>
 
 </html>

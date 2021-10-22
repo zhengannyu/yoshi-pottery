@@ -1,0 +1,51 @@
+footer {
+  padding: 64px 0px;
+  background-color: #F9F9F9;
+
+
+  .footer-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    li {
+      margin: 16px 0;
+
+      a {
+        color: $dark-color;
+      }
+    }
+
+    .footer-brandbox {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      .follow-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .ig {
+          margin-left: 40px;
+          margin-right: 10px;
+        }
+
+        .fb {
+          margin-left: 10px;
+        }
+      }
+
+      h4 {
+        font-family: 'Cormorant Garamond';
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

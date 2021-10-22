@@ -1,0 +1,105 @@
+.bg-secondary {
+  background: $secondary-color;
+}
+
+.bg-secondary-dark {
+  background: $secondary-color-dark;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.dark-color {
+  color: $dark-color;
+}
+
+//space
+$sp-64: 64px;
+$sp-32: 32px;
+$sp-24: 24px;
+$sp-12: 12px;
+$sp-8: 8px;
+$sp-4: 4px;
+
+.px-24 {
+  padding: 0 24px;
+}
+
+.mx--24 {
+  margin: 0 -24px;
+}
+
+//width
+.w-30 {
+  width: 30%;
+
+}
+
+.w-35 {
+  width: 35%;
+
+}
+
+.w-40 {
+  width: 40%;
+
+}
+
+.w-45 {
+  width: 45%;
+
+}
+
+.w-50 {
+  width: 50%;
+
+}
+
+.w-60 {
+  width: 60%;
+
+}
+
+.w-65 {
+  width: 65%;
+
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  padding: 0 $sp-32;
+  margin: 0 auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+//display
+.inline-block {
+  display: inline-block;
+}
+
+.wrap-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.wrap-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.grid {
+  display: grid;
+}

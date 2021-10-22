@@ -1,0 +1,48 @@
+.navbar {
+  padding: 20px 3%;
+  width: 100vw;
+  position: fixed;
+  top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 9;
+  backdrop-filter: blur(3px);
+
+
+  .navlink-wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navlink {
+
+
+    padding: 0px 30px;
+
+    a {
+      font-family: 'Noto Serif TC', serif;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+  }
+
+  .menu-box {
+    margin-left: 50px;
+  }
+
+  .line-1 {
+    width: 24px;
+    height: 1px;
+    background-color: $primary-color;
+    margin-top: 1px;
+  }
+
+  .line-2 {
+    width: 24px;
+    height: 1px;
+    background-color: $primary-color;
+    margin-top: 11px;
+  }
+}

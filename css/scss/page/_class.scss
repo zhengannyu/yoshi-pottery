@@ -1,0 +1,22 @@
+.class-hero {
+  margin: 100px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: end;
+}
+
+.class-txt {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+}
+
+.class-bg {
+  width: 50%;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  background-color: $dark-color;
+  z-index: -1;
+}

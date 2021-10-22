@@ -1,0 +1,213 @@
+//hero
+.hero-section {
+  padding: 90px 5% 0px 5%;
+  display: flex;
+  justify-content: space-between;
+
+  .w-35 {
+    margin-top: 100px;
+  }
+
+  .w-65 {
+    padding-left: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    img {
+      margin-top: 30px;
+      margin-right: 20px;
+    }
+  }
+
+  .brand-video {
+    max-width: 100%;
+  }
+}
+
+//about
+.about-section {
+  display: flex;
+  justify-content: flex-start;
+  margin: 180px 0;
+
+  .about-l {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+
+    .titlebox {
+      display: inline-block;
+      width: auto;
+    }
+  }
+
+  .about-r {
+    margin-left: 50px;
+
+    p {
+      margin-top: 20px;
+    }
+
+    .ab-imgbox {
+      margin-top: 60px;
+
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+//works
+.works-section {
+  margin: 180px 0;
+
+  .index-works-wrap {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .index-works-card {
+    p {
+      margin-top: $sp-12;
+    }
+  }
+
+  .index-works-card.left {
+    margin-top: 150px;
+    margin-left: -120px;
+  }
+
+  .index-works-card.right {
+    margin-top: 150px;
+    margin-right: -120px;
+  }
+}
+
+//art
+.arts-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 180px;
+
+  .art-l {
+    height: 540px;
+    background: url('../assets/arts.jpg') no-repeat 55% 50%;
+    background-size: cover;
+  }
+
+  .art-r {
+    position: relative;
+    padding-left: 64px;
+
+    h4 {
+      margin-bottom: 32px;
+    }
+
+    img {
+      position: absolute;
+      bottom: -10%;
+      left: -20%;
+      z-index: -1;
+    }
+  }
+}
+
+//class
+.class-container {
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+.index-class-wrap {
+  margin-left: 5%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+// class-card
+.class-card {
+  padding: $sp-32;
+  margin-right: $sp-64;
+  width: 560px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  img {
+    width: 60%;
+    align-items: center;
+    align-self: center;
+  }
+
+  h6 {
+    margin-top: $sp-24;
+  }
+}
+
+//contact
+.contact-section {
+  margin: 120px 0;
+}
+
+.contact-l {
+  color: $dark-color;
+  position: relative;
+  overflow: hidden;
+
+  h2 {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+  }
+
+  .text {
+    margin-left: 20%;
+    margin-top: 100px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .label {
+    a {
+      display: block;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $dark-color;
+      margin-bottom: -10px;
+    }
+  }
+
+  .follow-box {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .ig {
+      margin-left: 40px;
+      margin-right: 10px;
+    }
+
+    .fb {
+      margin-left: 10px;
+    }
+  }
+}
+
+.contact-r {
+  background: url(../assets/contact.jpg) no-repeat 55% 50%;
+  background-size: cover;
+}

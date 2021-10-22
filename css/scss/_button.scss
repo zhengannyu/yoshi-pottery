@@ -1,0 +1,91 @@
+// button & tag
+.btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: block;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+.btn-primary-outline {
+  border: 1px solid $primary-color;
+  color: $primary-color;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+}
+
+.btn-secondary-outline {
+  border: 1px solid $secondary-color;
+  color: $secondary-color;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+}
+
+.tag {
+  margin-left: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+
+//more
+.btn-more {
+  margin: 10px 20px 0px 0px;
+  padding: 8px 0px;
+  width: 150px;
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px solid $primary-color;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1;
+  color: $dark-color;
+
+  //arrow-line
+  &::before {
+    content: "";
+    width: 12px;
+    height: 1px;
+    background: $dark-color;
+    position: absolute;
+    top: 30%;
+    margin-top: 2px;
+    right: 0px;
+    transition: all 0.3s ease;
+  }
+
+  //triangle
+  &::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border: 1px solid $dark-color;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+    position: absolute;
+    margin-top: -1px;
+    top: 30%;
+    right: 0px;
+  }
+
+}

@@ -1,0 +1,130 @@
+/* zh */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@2s00;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
+/* en */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+//text-align
+$align-center: center;
+$align-left: left;
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+//typographic
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: $align-center;
+  letter-spacing: 8px;
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 144px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: 10px;
+  color: #F5F5F5;
+  text-align: center;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 8px;
+}
+
+h4 {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 8px;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 5px;
+}
+
+p {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.price-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+.caption {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.label {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+//component
+//title
+.titlebox {
+  margin-bottom: $sp-64;
+  width: 100%;
+  position: relative;
+}
+
+.titlebox {
+  h1 {
+    position: absolute;
+    top: auto;
+    right: 0%;
+    left: 0%;
+    bottom: 20px;
+  }
+}
+
+.copyright {
+  position: fixed;
+  top: 60%;
+  right: -5%;
+  transform: rotate(90deg);
+  z-index: 9;
+}

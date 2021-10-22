@@ -1,0 +1,42 @@
+//theme color
+$primary-color:#6C4D41;
+$secondary-color: #E6DFD9;
+$secondary-color-dark: #EDDEDA;
+$dark-color:#3C363B;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Serif TC', serif;
+  line-height: 1;
+  color: $primary-color;
+}
+
+main {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+  margin: 0px;
+}
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: $primary-color;
+}
+
+img,
+video {
+  max-width: 100%;
+}

@@ -1,32 +1,43 @@
 .contact-section {
-  .dark-color {
-    margin: 32px 32px;
+  .contact-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    .contact-l {
+      width: 40%;
+    }
+
+    .contact-r {
+      width: 50%;
+
+      .contact-txt {
+        margin: 32px 32px;
+      }
+
+      .form {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+
+        .form-row {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .form-column {
+            padding: 24px 32px;
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
+          }
+        }
+      }
+    }
   }
 }
 
-.form {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-end;
-
-}
-
-.form-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.form-column {
-  padding: 24px 32px;
-  flex-basis: 50%;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-//
 //input
 .input-string,
 .input-textarea {
@@ -91,4 +102,89 @@ select {
   font-family: 'Noto Serif TC', serif;
   font-size: 16px;
   cursor: pointer;
+}
+
+// .contact-section
+// .contact-wrap
+// .contact-l
+// .contact-r
+//tablets
+@media (max-width: 991.98px) {
+  .contact-section {
+    .contact-wrap {
+      flex-flow: column wrap;
+      justify-content: center;
+
+      .contact-l {
+        width: 100%;
+
+        .text {
+          margin-left: 14%;
+        }
+      }
+
+      .contact-r {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contact-section {
+    .contact-wrap {
+      .contact-l {
+        .text {
+          margin-left: 40px;
+        }
+      }
+
+      .contact-r {
+        width: 100%;
+        padding: 0 20px;
+
+        .contact-txt {
+          margin: 32px 10px;
+          font-size: 18px;
+        }
+
+        .form {
+          .form-row {
+            .form-column {
+              padding: 24px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//portrait phones
+@media (max-width: 575.98px) {
+  .contact-section {
+    .contact-wrap {
+      .contact-r {
+        .contact-txt {
+          font-size: 14px;
+        }
+
+        .form {
+          .form-row {
+            flex-flow: row wrap;
+
+            .form-column {
+              padding: 24px 10px;
+              flex-basis: 100%;
+            }
+          }
+
+          .submit-btn {
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
 }

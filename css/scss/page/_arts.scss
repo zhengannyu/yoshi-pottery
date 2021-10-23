@@ -48,13 +48,13 @@
   margin: 250px 0px 0px 0px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .display-title {
     display: none;
   }
 
   .art-title {
-    margin: 120px 0px 0px 0px;
+    margin: 120px 0px 60px 0px;
   }
 
   .art-wrap {
@@ -67,6 +67,6 @@
   .arts-card-4,
   .arts-card-5,
   .arts-card-6 {
-    margin: 40px 0;
+    margin: 0 auto 40px;
   }
 }

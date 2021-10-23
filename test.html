@@ -5,50 +5,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Serif+Display:ital,wght@1,300&family=Noto+Serif+JP:wght@300;400&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./test.css">
   <title>Document</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+  <div class="art-wrap wrap-row">
+    <div class="w-30 px-24 arts-card arts-card-1">
+      <a href="#art1">
+        <img class="thumbnail" src="./assets/arts_01.png">
+      </a>
+      <div>
+        <p>作品名稱</p>
+        <p>CONTACT FOR PRICE</p>
       </div>
     </div>
-  </nav>
+    <div class="w-40 px-24 arts-card arts-card-2">
+      <a href="#art2">
+        <img class="thumbnail" src="./assets/arts_02.png">
+      </a>
+      <div>
+        <p>作品名稱</p>
+        <p>CONTACT FOR PRICE</p>
+      </div>
+    </div>
+    <div class="w-30 px-24 arts-card arts-card-3">
+      <a href="#art3">
+        <img class="thumbnail" src="./assets/arts_02.png">
+      </a>
+      <div>
+        <p>作品名稱</p>
+        <p>CONTACT FOR PRICE</p>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="lightbox" id="art1">
+    <img src="./assets/arts_01.png">
+  </a>
+  <a href="#" class="lightbox" id="art2">
+    <img src="./assets/arts_02.png">
+  </a>
+  <a href="#" class="lightbox" id="art3">
+    <img src="./assets/arts_03.png">
+  </a>
 </body>
 
 </html>

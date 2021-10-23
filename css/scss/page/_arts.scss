@@ -48,6 +48,30 @@
   margin: 250px 0px 0px 0px;
 }
 
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000066;
+  z-index: -1;
+  opacity: 0;
+}
+
+.lightbox img {
+  max-height: 80%;
+}
+
+.lightbox:target {
+  opacity: 1;
+  z-index: 1;
+  transition: 0.5s;
+}
+
 @media (max-width: 767.98px) {
   .display-title {
     display: none;
@@ -59,14 +83,45 @@
 
   .art-wrap {
     margin-bottom: 100px;
+
+    .w-30,
+    .w-40 {
+      width: 45%;
+    }
   }
 
   .arts-card-1,
   .arts-card-2,
   .arts-card-3,
-  .arts-card-4,
   .arts-card-5,
   .arts-card-6 {
     margin: 0 auto 40px;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .arts-card-4 {
+    margin: -40px auto 40px;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .art-wrap {
+
+    .w-30,
+    .w-40 {
+      width: 100%;
+    }
+
+    .arts-card-4 {
+      margin: 0px auto 40px;
+    }
   }
 }

@@ -9,26 +9,51 @@
   pointer-events: none;
 }
 
-.cursor {
-  width: 10px;
-  height: 10px;
-  background: #333;
-  border-radius: 50%;
-  position: absolute;
-  pointer-events: none;
-  z-index: 100;
-}
+// #cursor {
+//   width: 10px;
+//   height: 10px;
+//   background: $secondary-color;
+//   border-radius: 50%;
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   pointer-events: none;
+//   z-index: 100;
+//   transition-duration: 200ms;
+//   transition-timing-function: ease-out;
+//   // animation: cursorAnim .5s infinite alternate;
+// }
+
+// .cursor::after {
+//   content: "";
+//   width: 20px;
+//   height: 20px;
+//   position: absolute;
+
+// }
+
+// @keyframes cursorAnim {
+//   from {
+//     transform: scale(1);
+//   }
+
+//   to {
+//     transform: scale(1.5);
+//   }
+// }
 
 #ball {
   width: 60px;
   height: 60px;
   background: none;
-  border: 1px solid #222;
+  background: $secondary-color;
+  opacity: 50%;
   border-radius: 50%;
   /* absoulute才能讓js指定他的xy */
   position: absolute;
   left: 50%;
   top: 50%;
+  // 讓他真的置中
   margin: -25px 0 0 -25px;
   pointer-events: none;
 }

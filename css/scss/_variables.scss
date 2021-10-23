@@ -111,3 +111,14 @@ $sp-4: 4px;
     max-width: 1500px;
   }
 }
+
+@media screen and (max-width: 767.98px) {
+  .wrap-row {
+    flex-flow: column wrap;
+
+    .w-30,
+    .w-40 {
+      width: 100%;
+    }
+  }
+}

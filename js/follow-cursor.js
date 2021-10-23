@@ -1,4 +1,4 @@
-//跟隨的球
+//滑鼠游標
 var $ = document.querySelector.bind(document);
 var $on = document.addEventListener.bind(document);
 
@@ -23,9 +23,10 @@ var followMouse = function followMouse() {
   if (!x || !y) {
     x = xmouse;
     y = ymouse;
+    // speed = 0.08;
   } else {
-    dx = (xmouse - x) * 0.125;
-    dy = (ymouse - y) * 0.125;
+    dx = (xmouse - x);
+    dy = (ymouse - y);
     if (Math.abs(dx) + Math.abs(dy) < 0.1) {
       x = xmouse;
       y = ymouse;
@@ -36,13 +37,4 @@ var followMouse = function followMouse() {
   }
   ball.style.left = x + 'px';
   ball.style.top = y + 'px';
-};
-
-//游標本身
-let mouseCursor = document.querySelector('.cursor');
-window.addEventListener('mousemove', cursor);
-
-function cursor(event) {
-  mouseCursor.style.top = event.pageY + 'px';
-  mouseCursor.style.left = event.pageX + 'px';
 };

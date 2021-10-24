@@ -60,19 +60,32 @@
     <div class="container">
       <section class="work-detail-wrap">
         <div class="work-img-wrap">
-          <div class="work-lightbox">
-            <img src="./assets/works_01.png" alt="">
+          <div class="work-slider-viewport">
+            <div class="work-slider-container">
+              <div class="work-slider-img" style="background-image: url(./assets/works_01.png);">
+              </div>
+              <div class="work-slider-img" style="background-image: url(./assets/works_01.png);">
+              </div>
+              <div class="work-slider-img" style="background-image: url(./assets/works_01.png);">
+              </div>
+            </div>
+          </div>
+          <div class="work-slider-page">
+            <div class="work-single-page" data-num="1" style="background-image: url(./assets/works_01.png)"></div>
+            <div class="work-single-page" data-num="2" style="background-image: url(./assets/works_01.png)"></div>
+            <div class="work-single-page" data-num="13" style="background-image: url(./assets/works_01.png)"></div>
           </div>
         </div>
         <div class="work-info-wrap">
-          <div class="work-info-box">
-            <a href="./works.html">沙點白釉系列</a>
+          <a href="./works.html">沙點白釉系列</a>
+          <div class="work-info-title">
             <h5>霧灰藍盤器</h5>
-            <span class="roboto">18cm</span>
-            <h6 class="roboto">NT$800</h6>
-            <div class="dilver"></div>
-            <p>以豐富的色彩變化為日常生活增添色彩。 它具有光滑的啞光質地和邊緣。</p>
+            <span class="tag caption btn-secondary">18cm</span>
           </div>
+          <h6 class="roboto">NT$800</h6>
+          <div class="dilver"></div>
+          <p>以豐富的色彩變化為日常生活增添色彩。它具有光滑的啞光質地和邊緣。</p>
+
           <table>
             <tr>
               <td class="noto-sans">直徑</td>
@@ -88,10 +101,14 @@
             </tr>
           </table>
           <div class="work-btnbox">
-            <span>數量</span>
-            <input type="text">
-            <a class="btn" href="">放入購物車</a>
-            <a class="btn" href="">商業訂製洽詢</a>
+            <div class="amount">
+              <span class="noto-sans">數量</span>
+              <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+              <input type="number" id="number" value="0" />
+              <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+            </div>
+            <a class="btn btn-secondary" href="">放入購物車</a>
+            <a class="btn btn-primary-outline" href="./contact.html">商業訂製洽詢</a>
           </div>
         </div>
       </section>
@@ -148,6 +165,22 @@
   <!-- FOOTER -->
 
   <script src="./js/follow-cursor.js"></script>
+  <script>
+    function increaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById('number').value = value;
+    }
+
+    function decreaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value < 1 ? value = 1 : '';
+      value--;
+      document.getElementById('number').value = value;
+    }
+  </script>
 </body>
 
 </html>

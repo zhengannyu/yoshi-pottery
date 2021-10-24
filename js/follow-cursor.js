@@ -38,3 +38,24 @@ var followMouse = function followMouse() {
   ball.style.left = x + 'px';
   ball.style.top = y + 'px';
 };
+//讓mouseCursor = .cursor
+let mouseCursor = document.querySelector('#ball');
+//獲取所有navlinks
+let links = document.querySelectorAll('a, button, input, textarea, select');
+// console.log(links);
+
+links.forEach(link => {
+  //當滑鼠HOVER時
+  link.addEventListener('mouseover', () => {
+    //在.cursor增加一個classname'link-grow'
+    mouseCursor.classList.add('link-grow');
+    //在link增加一個classname'hovered-link'
+    // link.classList.add('hovered-link');
+  });
+  //當滑鼠leave時
+  link.addEventListener('mouseleave', () => {
+    //刪除classname'link-grow'
+    mouseCursor.classList.remove('link-grow')
+    // link.classList.remove('hovered-link');
+  });
+});

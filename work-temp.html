@@ -10,8 +10,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Serif+Display:ital,wght@1,300&family=Noto+Serif+JP:wght@300;400&family=Roboto:wght@300&display=swap"
     rel="stylesheet">
+  <title>生活陶｜又煦陶作</title>
+  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
   <link rel="stylesheet" href="./css/common.css">
-  <title>藝術陶｜又煦陶作</title>
 </head>
 
 <body onload="followMouse();">
@@ -36,7 +37,7 @@
               <a class="navlink" href="works.html">生活陶</a>
             </li>
             <li class="nav-item">
-              <a class="navlink" href="class.html">課程教學</a>
+              <a class="navlink" href="classes.html">課程教學</a>
             </li>
             <li class="nav-item">
               <a class="navlink" href="contact.html">聯絡我們</a>
@@ -52,86 +53,67 @@
     </nav>
   </header>
   <!-- NAVBAR -->
-  <main>
-    <div class="left-fixed">
-      <p class="copyright roboto">© YOSHIPOTTERY ALL RIGHTS RESERVED.</p>
-    </div>
-    <h2 class="display-title">Art Pottery</h2>
-    <h3 class="art-title align-center">藝術陶</h3>
-    <!-- arts-card -->
-    <div class="art-wrap wrap-row">
-      <div class="w-30 px-24 arts-card arts-card-1">
-        <a href="#art1">
-          <img class="thumbnail" src="./assets/arts_01.png">
-        </a>
-        <div>
-          <p>作品名稱</p>
-        </div>
-      </div>
-      <div class="w-40 px-24 arts-card arts-card-2">
-        <a href="#art2">
-          <img class="thumbnail" src="./assets/arts_02.png">
-        </a>
-        <div>
-          <p>作品名稱</p>
-        </div>
-      </div>
-      <div class="w-30 px-24 arts-card arts-card-3">
-        <a href="#art3">
-          <img class="thumbnail" src="./assets/arts_03.png">
-        </a>
-        <div>
-          <p>作品名稱</p>
-        </div>
-      </div>
-      <div class="w-30 px-24 arts-card arts-card-4">
-        <a href="#art4">
-          <img class="thumbnail" src="./assets/arts_04.png">
-        </a>
-        <div>
-          <p>作品名稱</p>
-        </div>
-      </div>
-      <div class="w-40 px-24 arts-card arts-card-5">
-        <a href="#art5">
-          <img class="thumbnail" src="./assets/arts_05.png">
-        </a>
-        <div>
-          <p>作品名稱</p>
 
+  <!-- CONTAINER -->
+  <main>
+
+    <div class="container">
+      <section class="work-detail-wrap">
+        <div class="work-img-wrap">
+          <div class="work-lightbox">
+            <img src="./assets/works_01.png" alt="">
+          </div>
         </div>
-      </div>
-      <div class="w-30 px-24 arts-card arts-card-6">
-        <a href="#art6">
-          <img class="thumbnail" src="./assets/arts_06.png">
+        <div class="work-info-wrap">
+          <div class="work-info-box">
+            <a href="./works.html">沙點白釉系列</a>
+            <h5>霧灰藍盤器</h5>
+            <span class="roboto">18cm</span>
+            <h6 class="roboto">NT$800</h6>
+            <div class="dilver"></div>
+            <p>以豐富的色彩變化為日常生活增添色彩。 它具有光滑的啞光質地和邊緣。</p>
+          </div>
+          <table>
+            <tr>
+              <td class="noto-sans">直徑</td>
+              <td class="roboto">180mm</td>
+            </tr>
+            <tr>
+              <td class="noto-sans">高</td>
+              <td class="roboto">80mm</td>
+            </tr>
+            <tr>
+              <td class="noto-sans">材質</td>
+              <td class="noto-sans">白瓷土 / 沙點白釉</td>
+            </tr>
+          </table>
+          <div class="work-btnbox">
+            <span>數量</span>
+            <input type="text">
+            <a class="btn" href="">放入購物車</a>
+            <a class="btn" href="">商業訂製洽詢</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- works-series-card -->
+      <div class="works-series-wrap wrap-row">
+        <h4 class="sub-title">其他系列</h4>
+        <a class="w-45">
+          <img src="./assets/series_01.png" alt="">
+          <h6 class="align-left">作品名稱</h6>
+          <p>霧藍綠釉低調不搶眼並透出些微土色，帶有自然的感覺</p>
         </a>
-        <div>
-          <p>作品名稱</p>
-        </div>
+        <a class="w-45">
+          <img src="./assets/series_02.png" alt="">
+          <h6 class="align-left">作品名稱</h6>
+          <p>霧藍綠釉低調不搶眼並透出些微土色，帶有自然的感覺</p>
+        </a>
       </div>
     </div>
-    <!-- arts-card -->
-    <!-- lightbox -->
-    <a href="#" class="lightbox" id="art1">
-      <img src="./assets/arts_01.png">
-    </a>
-    <a href="#" class="lightbox" id="art2">
-      <img src="./assets/arts_02.png">
-    </a>
-    <a href="#" class="lightbox" id="art3">
-      <img src="./assets/arts_03.png">
-    </a>
-    <a href="#" class="lightbox" id="art4">
-      <img src="./assets/arts_04.png">
-    </a>
-    <a href="#" class="lightbox" id="art5">
-      <img src="./assets/arts_05.png">
-    </a>
-    <a href="#" class="lightbox" id="art6">
-      <img src="./assets/arts_06.png">
-    </a>
   </main>
   <!-- CONTAINER -->
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container-footer">
@@ -166,7 +148,6 @@
   <!-- FOOTER -->
 
   <script src="./js/follow-cursor.js"></script>
-  <script src="./js/line-scroll.js"></script>
 </body>
 
 </html>

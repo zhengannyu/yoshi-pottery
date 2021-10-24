@@ -3,7 +3,7 @@ var container = document.getElementsByClassName('frame');
 var hs = new HorizontalScroll.default({
   blocks: blocks,
   container: container,
-  inAnimated: true,
-  springEffect: .8,
-  skewReducer: 30
+  // isAnimated: true,
+  springEffect: .5,
+  // skewReducer: 5
 });

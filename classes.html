@@ -16,9 +16,8 @@
 
 <body onload="followMouse();">
   <!-- Follow Cursor -->
-  <div class="cursor"></div>
   <div class="cursor-wrap">
-    <div id="ball"></div>
+    <div class="cursor" id="ball"></div>
   </div>
   <!-- Follow Cursor -->
   <!-- NAVBAR -->
@@ -37,7 +36,7 @@
               <a class="navlink" href="works.html">生活陶</a>
             </li>
             <li class="nav-item">
-              <a class="navlink" href="class.html">課程教學</a>
+              <a class="navlink" href="classes.html">課程教學</a>
             </li>
             <li class="nav-item">
               <a class="navlink" href="contact.html">聯絡我們</a>
@@ -71,43 +70,47 @@
           <div class="class-bg w-50"></div>
         </div>
       </div>
-
     </section>
-    <section class="track">
-      <div class="camera">
-        <div class="frame">
-          <div class="item item-1">
-            <!--  -->
-            <p>學習以土球、土條、土板三大類基礎做陶技法，<br>
-              製作日常中會使用到的物品。</p>
-            <img src="./assets/class_01.png" alt="">
-            <h5>手捏器皿</h5>
-          </div>
-          <div class="item item-2">
-            <p>學習從掌上型小陶偶，
-              到中型陶偶挖空或土條製作技法，配合化妝土上色。</p>
-            <img src="./assets/class_02.png" alt="">
-            <h5>手捏器皿</h5>
-          </div>
-          <div class="item item-3">
-            <p>學習以轆轤製作杯、碗、盤形，技巧較高，表面質感較為圓滑平整。</p>
-            <img src="./assets/class_03.png" alt="">
-            <h5>手捏器皿</h5>
-          </div>
-          <div class="item item-4">
-            <p>學習從掌上型小陶偶，
-              到中型陶偶挖空或土條製作技法，配合化妝土上色。</p>
-            <img src="./assets/class_04.png" alt="">
-            <h5>手捏器皿</h5>
-          </div>
-          <div class="item item-5">
-            <p>學習從掌上型小陶偶，
-              到中型陶偶挖空或土條製作技法，配合化妝土上色。</p>
-            <img src="./assets/class_05代換.png" alt="">
-            <h5>手捏器皿</h5>
+    <section class="class-list">
+      <div class="titlebox">
+        <h1>課程教學</h1>
+        <h2>CLASSES</h2>
+      </div>
+      <section class="track">
+        <div class="camera">
+          <div class="frame">
+            <a href="./class-temp.html" class="item item-1">
+              <p>學習以土球、土條、土板三大類基礎做陶技法，<br>
+                製作日常中會使用到的物品。</p>
+              <img src="./assets/class_01.png" alt="">
+              <h5>手捏器皿</h5>
+            </a>
+            <a href="" class="item item-2">
+              <p>學習從掌上型小陶偶，
+                到中型陶偶挖空或土條製作技法，配合化妝土上色。</p>
+              <img src="./assets/class_02.png" alt="">
+              <h5>陶偶雕塑</h5>
+            </a>
+            <a href="" class="item item-3">
+              <p>學習以轆轤製作杯、碗、盤形，技巧較高，表面質感較為圓滑平整。</p>
+              <img src="./assets/class_03.png" alt="">
+              <h5>基礎拉胚</h5>
+            </a>
+            <a href="" class="item item-4">
+              <p>學習從掌上型小陶偶，
+                到中型陶偶挖空或土條製作技法，配合化妝土上色。</p>
+              <img src="./assets/class_04.png" alt="">
+              <h5>進階創作</h5>
+            </a>
+            <a href="" class="item item-5">
+              <p>學習從掌上型小陶偶，
+                到中型陶偶挖空或土條製作技法，配合化妝土上色。</p>
+              <img src="./assets/class_05代換.png" alt="">
+              <h5>體驗 / 團體課</h5>
+            </a>
           </div>
         </div>
-      </div>
+      </section>
     </section>
   </main>
   <!-- CONTAINER -->
@@ -140,9 +143,10 @@
         <p>生活器皿販售 / 陶藝課程教學</p>
       </div>
     </div>
-
+    <span class="copyright-footer">本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。</span>
   </footer>
   <!-- FOOTER -->
+  <script src="./js/follow-cursor.js"></script>
   <script src="./js/horizonal-plugin.js"></script>
   <script src="./js/horizonal-scroll.js"></script>
 </body>

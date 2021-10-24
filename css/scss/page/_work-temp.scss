@@ -1,0 +1,16 @@
+.work-detail-wrap {
+  margin: 120px 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  .work-img-wrap {
+    margin: 0 0px 0 0;
+    width: 50%;
+  }
+
+  .work-info-wrap {
+    margin: 0 0 0 0px;
+    width: 40%;
+  }
+}

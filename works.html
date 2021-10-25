@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hang">
+<html lang="zh-Hant-TW">
 
 <head>
   <meta charset="UTF-8">
@@ -15,12 +15,15 @@
   <link rel="stylesheet" href="./css/common.css">
 </head>
 
-<body onload="followMouse();">
+<body onload="followMouse();" data-barba="wrapper">
   <!-- Follow Cursor -->
   <div class="cursor-wrap">
     <div class="cursor" id="ball"></div>
   </div>
   <!-- Follow Cursor -->
+  <div class="load-container">
+    <div class="loading-screen"></div>
+  </div>
   <!-- NAVBAR -->
   <header>
     <nav class="navbar">
@@ -45,10 +48,10 @@
           </ul>
         </div>
         <!-- menu-btn -->
-        <button class="navbar-toggler" type="button">
+        <a href="./menu.html" class="navbar-toggler">
           <div class="line-1"></div>
           <div class="line-2"></div>
-        </button>
+        </a>
       </div>
     </nav>
   </header>
@@ -173,6 +176,10 @@
   <!-- FOOTER -->
 
   <script src="./js/follow-cursor.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

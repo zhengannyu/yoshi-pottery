@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,12 @@
   <title>menu</title>
 </head>
 
-<body>
+<body onload="followMouse();">
+  <!-- Follow Cursor -->
+  <div class="cursor-wrap">
+    <div class="cursor" id="ball"></div>
+  </div>
+  <!-- Follow Cursor -->
   <div class="menu-section">
     <div class="menubg w-35"></div>
     <div class="menu-content">
@@ -45,6 +50,8 @@
       </div>
     </div>
   </div>
+
+  <script src="./js/follow-cursor.js"></script>
 </body>
 
 </html>

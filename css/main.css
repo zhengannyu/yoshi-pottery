@@ -933,6 +933,58 @@ p {
   mix-blend-mode: difference;
 }
 
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-img {
+  height: 600px;
+  overflow: hidden;
+}
+
+.slider-control-wrap {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translate3d(calc(100% + 48px), 0, 0);
+          transform: translate3d(calc(100% + 48px), 0, 0);
+}
+
+.arrow-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.arrow-wrap .arrowbox {
+  margin: 0px 20px 20px 0px;
+  padding: 15px 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.arrow-wrap .arrowbox.focus {
+  background-color: #E6DFD9;
+}
+
+.slider-number .roboto.number {
+  margin: 0px 20px 0px 0px;
+  color: #E6DFD9;
+}
+
+.slider-number .roboto.number.active {
+  color: #3C363B;
+}
+
 .hero-section {
   padding: 90px 5% 0px 5%;
   display: -webkit-box;

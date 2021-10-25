@@ -51,8 +51,11 @@
 
   :focus {
     outline: none;
-
   }
+}
+
+.labelup {
+  transform: translateY(20px);
 }
 
 select {

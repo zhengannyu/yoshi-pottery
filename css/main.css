@@ -394,6 +394,8 @@ p {
 .btn-primary-outline {
   border: 1px solid #6C4D41;
   color: #6C4D41;
+  -webkit-transition: all 800ms ease-in-out 0s;
+  transition: all 800ms ease-in-out 0s;
 }
 
 .btn-primary-outline:hover {
@@ -404,6 +406,8 @@ p {
 .btn-secondary-outline {
   border: 1px solid #E6DFD9;
   color: #E6DFD9;
+  -webkit-transition: all 800ms ease 0s;
+  transition: all 800ms ease 0s;
 }
 
 .btn-secondary-outline:hover {
@@ -509,9 +513,35 @@ p {
           justify-content: flex-end;
 }
 
-.navbar .container-navbar .navbar-collapse .navbar-nav .nav-item .navlink {
+.navbar .container-navbar .navbar-collapse .navbar-nav .nav-item {
   padding: 16px 30px;
+}
+
+.navbar .container-navbar .navbar-collapse .navbar-nav .nav-item .navlink {
+  position: relative;
+  overflow: hidden;
   letter-spacing: 2px;
+}
+
+.navbar .container-navbar .navbar-collapse .navbar-nav .nav-item .navlink.active {
+  font-weight: 400;
+  border-bottom: 1px solid #6C4D41;
+}
+
+.navbar .container-navbar .navbar-collapse .navbar-nav .nav-item .navlink .underline {
+  margin-top: 6px;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #6C4D41;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.navbar .container-navbar .navbar-collapse .navbar-nav .nav-item .navlink:hover .underline {
+  width: 100%;
 }
 
 .navbar .container-navbar .navbar-toggler {
@@ -696,9 +726,29 @@ p {
           justify-content: space-between;
 }
 
+.menu-section .menu-content .menu-link-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .menu-section .menu-content .menu-link-wrap .menulink {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
   margin: 10px 0px;
-  padding: 20px 0;
+  padding: 10px 0;
   font-family: 'Noto Serif TC', serif;
   font-size: 32px;
   letter-spacing: 8px;
@@ -854,8 +904,8 @@ p {
 }
 
 #ball {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background: none;
   background: #E6DFD9;
   opacity: 50%;
@@ -872,16 +922,15 @@ p {
   transition-property: background, -webkit-transform;
   transition-property: background, transform;
   transition-property: background, transform, -webkit-transform;
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
-  z-index: -1;
+  z-index: 99;
 }
 
 .link-grow {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
   -webkit-filter: hue-rotate(180deg);
           filter: hue-rotate(180deg);
+  mix-blend-mode: difference;
 }
 
 .hero-section {
@@ -1574,13 +1623,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .item {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
   padding: 35px 50px;
   margin: 60px;
   background-color: #E6DFD9;
@@ -1725,8 +1767,7 @@ input[type=number]::-webkit-outer-spin-button {
       flex-shrink: 1;
 }
 
-.input-string,
-.input-textarea {
+.input-string {
   position: relative;
 }
 
@@ -1736,11 +1777,17 @@ input[type=number]::-webkit-outer-spin-button {
   color: #3C363B;
   border: 1px solid #3C363B;
   border-width: 0 0 1px 0;
+}
+
+.input:focus {
   outline: none;
 }
 
-.input :focus {
-  outline: none;
+.input:focus + .input-label {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  opacity: 70%;
+  font-size: 14px;
 }
 
 select {
@@ -1757,9 +1804,11 @@ select {
   top: 8px;
   left: 8px;
   pointer-events: none;
+  -webkit-transition: all 300ms ease-out 0s;
+  transition: all 300ms ease-out 0s;
 }
 
-.input-textarea-input {
+.input-textarea {
   padding: 12px;
   width: 100%;
   color: #3C363B;
@@ -1769,8 +1818,11 @@ select {
   outline: none;
 }
 
-.input-textarea label {
-  top: 0px;
+.input-textarea:focus + .input-label {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  opacity: 70%;
+  font-size: 14px;
 }
 
 .submit-btn {

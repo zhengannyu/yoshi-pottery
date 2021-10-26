@@ -173,7 +173,17 @@ p {
   color: #999;
 }
 
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 96px;
+  }
+}
+
 @media screen and (max-width: 575.98px) {
+  h2 {
+    font-size: 48px;
+  }
+
   .left-fixed {
     right: 0px;
     text-align: center;

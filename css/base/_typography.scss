@@ -1,0 +1,153 @@
+// ========== 中文字體 ========== 
+// 'Noto Serif JP', serif; 明體
+// 300 大部分字體、內文
+// 500 H3大標題
+
+// 'Noto Sans JP', sans-serif; 黑體 
+// 300 H1標題 / Footer / 按鈕
+
+// ========== 英數 ========== 
+// 'Noto Serif Display', serif; 英文字體
+// 300 italic H2大英文標題
+
+// 'Roboto', sans-serif; 
+// 300 價格 / copyright / 電話 / email
+
+//========== 字型設置 ========== 
+$fs: 10px;
+$light: 300;
+$medium: 500;
+$noto-zh: 'Noto Sans JP', sans-serif;
+$noto-en: 'Noto Serif Display', serif;
+$roboto: 'Roboto', sans-serif;
+
+//font-family
+.noto-sans {
+  font: {
+    size: $fs * 1.6;
+    family: $noto-zh;
+  }
+  letter-spacing: 1px;
+}
+.roboto {
+  font-family: $roboto;
+  letter-spacing: 1px;
+}
+//text-align
+$align-center: center;
+$align-left: left;
+
+.align-center {
+  text-align: $align-center;
+}
+.align-left {
+  text-align: $align-left;
+}
+//typographic
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+h1 {
+  font: {
+    family: $noto-zh;
+    size: $fs * 2;
+    weight: $light;
+  }
+  line-height: 1;
+  letter-spacing: 8px;
+  text-align: $align-center;
+}
+h2 {
+  font: {
+    family: $noto-en;
+    size: $fs * 14.4;
+    weight: $light;
+  }
+  line-height: 1;
+  letter-spacing: 10px;
+  text-align: $align-center;
+  color: #F5F5F5;
+}
+h3 {
+  font: {
+    size: $fs * 4.8;
+    weight: $medium;
+  }
+  line-height: 1;
+  letter-spacing: 8px;
+}
+h4 {
+  font: {
+    size: $fs * 3.6;
+    weight: $light;
+  }
+  line-height: 2;
+  letter-spacing: 8px;
+}
+h5 {
+  font: {
+    size: $fs * 2.4;
+    weight: $light;
+  }
+  line-height: 1.75;
+  letter-spacing: 4px;
+}
+h6 {
+  font: {
+    size: $fs * 1.8;
+    weight: $light;
+  }
+  line-height: 1;
+  letter-spacing: 5px;
+}
+p {
+  font: {
+    size: $fs * 1.5;
+    weight: $light;
+  }
+  line-height: 2;
+  letter-spacing: 1px;
+}
+.price-text {
+  font: {
+    family: $roboto;
+    size: $fs * 1.8;
+    weight: $light;
+  }
+  line-height: 1;
+  letter-spacing: 3px;
+}
+.caption {
+  font: {
+    family: $roboto;
+    size: $fs * 1.2;
+    weight: $light;
+  }
+  line-height: 1;
+}
+.label {
+  font: {
+    family: $noto-zh;
+    size: $fs * 1.4;
+    weight: $light;
+  }
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: $fs * 9.6;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  h2 {
+    font-size: $fs * 4.8;
+  }
+}

@@ -1,0 +1,47 @@
+// ========== title ==========
+.titlebox {
+  margin-bottom: $sp-64;
+  width: 100%;
+  position: relative;
+
+  h1 {
+    @include absolute(auto, 0, 20px, 0);
+  }
+}
+
+//========== 其他系列 / 學員作品標題 ==========
+.sub-title {
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: $align-center;
+}
+
+// ========== copyright ==========
+.left-fixed {
+  @include fixed(auto, 20px, auto, auto);
+  padding: 8px;
+  text-align: $align-center;
+  z-index: 20;
+  transform: rotate(90deg);
+}
+.copyright {
+  display: block;
+  position: absolute;
+  width: 100vh;
+  font-size: 12px;
+}
+.copyright-footer {
+  margin: 0 0 0 5%;
+  font-family: $noto-zh;
+  font-size: $fs * 1.2;
+  color: #999;
+}
+// ========== RWD ==========
+@media screen and (max-width: 575.98px) {
+  .copyright {
+    display: block;
+    position: absolute;
+    width: 100vh;
+    font-size: $fs * 1.2;
+  }
+};

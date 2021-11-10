@@ -1,18 +1,24 @@
 //ui system
-@import "./scss/root";
-@import "./scss/variables";
-@import "./scss/text";
-@import "./scss/button";
-@import "./scss/navbar";
-@import "./scss/footer";
-@import "./scss/menu";
-@import "./scss/cursor";
-@import "./scss/slider";
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/variables";
+
+//components
+@import "./components/text";
+@import "./components/button";
+@import "./components/cursor";
+@import "./components/slider";
+
+//layout
+@import "./layout/navbar";
+@import "./layout/menu";
+@import "./layout/footer";
+
 //page
-@import "./scss/page/index";
-@import "./scss/page/arts";
-@import "./scss/page/works";
-@import "./scss/page/work-temp";
-@import "./scss/page/classes";
-@import "./scss/page/class-temp";
-@import "./scss/page/contact";
+@import "./pages/index";
+@import "./pages/arts";
+@import "./pages/works";
+@import "./pages/work-temp";
+@import "./pages/classes";
+@import "./pages/class-temp";
+@import "./pages/contact";

@@ -1,149 +1,124 @@
-//theme-color
+//======= theme-color ======= 
 .primary-color {
   color: $primary-color;
 }
-
 .secondary-color {
   color: $secondary-color;
 }
-
 .dark-color {
   color: $dark-color;
 }
-
 .bg-secondary {
   background: $secondary-color;
+  &-dark {
+    background: $secondary-color-dark;
+  }
+//======= space ======= 
 }
-
-.bg-secondary-dark {
-  background: $secondary-color-dark;
-}
-
-//space
-$sp-64: 64px;
-$sp-32: 32px;
-$sp-24: 24px;
-$sp-12: 12px;
-$sp-8: 8px;
-$sp-4: 4px;
+$sp: 4px;
+$sp-64: $sp * 16;
+$sp-32: $sp * 8;
+$sp-24: $sp * 6;
+$sp-12: $sp * 3;
+$sp-8: $sp * 2;
 
 .px-24 {
-  padding: 0 24px;
+  padding: 0 $sp-24;
 }
-
 .mx--24 {
-  margin: 0 -24px;
+  margin: 0 -$sp-24;
 }
-
-//width
+//======= position ======= 
+@mixin absolute($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin fixed($top, $right, $bottom, $left) {
+  position: fixed;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+//======= width ======= 
+@mixin box-size($width, $heigh) {
+  width: $width;
+  height: $heigh;
+}
 .w-30 {
   width: 30%;
 }
-
 .w-35 {
   width: 35%;
 }
-
 .w-40 {
   width: 40%;
 }
-
 .w-45 {
   width: 45%;
 }
-
 .w-50 {
   width: 50%;
 }
-
 .w-60 {
   width: 60%;
 }
-
 .w-65 {
   width: 65%;
 }
-
 .w-70 {
   width: 70%;
 }
-
 .container {
   width: 80%;
   margin: 0 auto;
 }
-
 .w-100 {
   width: 100%;
 }
-
 //display
-.inline-block {
-  display: inline-block;
-}
-
 .wrap-row {
   display: flex;
   flex-flow: row wrap;
 }
-
 .wrap-column {
   display: flex;
   flex-flow: column wrap;
 }
-
-.between {
-  justify-content: space-between;
-}
-
-.align-center {
-  align-items: center;
-}
-
-
-.grid {
-  display: grid;
-}
-
 //larger desktops
 @media (min-width: 1440.02px) {
   .container {
     max-width: 1500px;
   }
-}
+};
 
 //large desktops
 @media (max-width: 1440px) {
   .container {
     max-width: 1100px;
   }
-}
-
-//desktops
-@media (max-width: 1199.98px) {}
-
-//tablets
-@media (max-width: 991.98px) {}
+};
 
 //landscape phones
 @media (max-width: 767.98px) {
   .container {
     width: calc(100% - 80px);
-  }
-
-  //3欄 -> 2欄
+    margin: 0 auto;
+  }  //3欄 -> 2欄
   .wrap-row {
     .w-30 {
       width: 45%;
     }
+//portrait phones
   }
 }
-
-//portrait phones
 @media (max-width: 575.98px) {
-  width: calc(100% - 40px);
-  margin: 0 auto;
-
+  .container {
+    width: calc(100% - 40px);
+  }
   .wrap-row {
     flex-flow: column wrap;
 

@@ -15,19 +15,23 @@
 </head>
 
 <body onload="followMouse();">
-  <!-- Follow Cursor -->
-  <div class="cursor-wrap">
-    <div class="cursor" id="ball"></div>
+  <!-- ============ Follow Cursor ============ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="wrap">
+    <div class="outer1" id="ball">
+      <div class="outer2">
+      </div>
+    </div>
   </div>
-  <!-- Follow Cursor -->
-  <!-- NAVBAR -->
+  <!-- ============ Follow Cursor ============ -->
+  <!-- ============ NAVBAR ============ -->
   <header>
     <nav class="navbar">
       <div class="container-navbar">
         <!-- brand -->
         <a class="navbar-brand" href="index.html"><img src="./assets/logo1.svg" alt=""></a>
         <!-- Navlink-list -->
-        <div class="navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="navlink active" href="arts.html">藝術陶<div class="underline"></div></a>
@@ -53,14 +57,15 @@
       </div>
     </nav>
   </header>
-  <!-- NAVBAR -->
+  <!-- ============ NAVBAR ============ -->
+  <!-- ============ MAIN ============ -->
   <main>
     <div class="left-fixed">
       <p class="copyright roboto">© YOSHIPOTTERY ALL RIGHTS RESERVED.</p>
     </div>
     <h2 class="display-title">Art Pottery</h2>
     <h3 class="art-title align-center">藝術陶</h3>
-    <!-- arts-card -->
+    <!-- ============ CardList ============ -->
     <div class="art-wrap wrap-row">
       <div class="w-30 px-24 arts-card arts-card-1">
         <a href="#art1">
@@ -168,7 +173,7 @@
   </footer>
   <!-- FOOTER -->
 
-  <script src="./js/follow-cursor.js"></script>
+  <script src="./js/cursor-2.js"></script>
   <script src="./js/text-hr-scroll.js"></script>
 </body>
 

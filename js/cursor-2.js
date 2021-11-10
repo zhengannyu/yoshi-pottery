@@ -52,13 +52,13 @@ function cursor(e) {
 };
 
 
-links.forEach(link => {
-  //當滑鼠HOVER時
-  link.addEventListener('mouseover', () => {
-    mouseCursor.classList.add('--grow');
-  });
-  //當滑鼠leave時
-  link.addEventListener('mouseleave', () => {
-    mouseCursor.classList.remove('--grow')
-  });
-});
+// links.forEach(link => {
+//   //當滑鼠HOVER時
+//   link.addEventListener('mouseover', () => {
+//     mouseCursor.classList.add('--grow');
+//   });
+//   //當滑鼠leave時
+//   link.addEventListener('mouseleave', () => {
+//     mouseCursor.classList.remove('--grow')
+//   });
+// });

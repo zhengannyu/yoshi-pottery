@@ -39,26 +39,14 @@ let followMouse = function followMouse() {
 };
 
 //讓mouseCursor = .cursor
-const mouseCursor = document.querySelector('.cursor');
+//let mouseCursor = document.querySelector('.cursor');
 //獲取所有links
-let links = document.querySelectorAll('a');
+//let links = document.querySelectorAll('a');
 
 //游標本身
-window.addEventListener('mousemove', cursor);
+//window.addEventListener('mousemove', cursor);
 //讓cursor跟著滑鼠的座標pageY&pageX
-function cursor(e) {
-  mouseCursor.style.top = e.pageY + 'px';
-  mouseCursor.style.left = e.pageX + 'px';
-};
-
-
-// links.forEach(link => {
-//   //當滑鼠HOVER時
-//   link.addEventListener('mouseover', () => {
-//     mouseCursor.classList.add('--grow');
-//   });
-//   //當滑鼠leave時
-//   link.addEventListener('mouseleave', () => {
-//     mouseCursor.classList.remove('--grow')
-//   });
-// });
+// function cursor(e) {
+//   mouseCursor.style.top = e.pageY + 'px';
+//   mouseCursor.style.left = e.pageX + 'px';
+// };

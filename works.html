@@ -1,219 +1,190 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Serif+Display:ital,wght@1,300&family=Noto+Serif+JP:wght@300;400&family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>生活陶｜又煦陶作</title>
-    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
 
-  <body onload="followMouse();" data-barba="wrapper">
-    <!-- Follow Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-wrap">
-      <div class="outer1" id="ball">
-        <div class="outer2"></div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Serif+Display:ital,wght@1,300&family=Noto+Serif+JP:wght@300;400&family=Roboto:wght@300&display=swap"
+    rel="stylesheet" />
+  <title>生活陶｜又煦陶作</title>
+  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body onload="followMouse();" data-barba="wrapper">
+  <!-- =========== Cursor =========== -->
+  <div class="cursor-wrap">
+    <div class="outer1" id="ball">
+      <div class="outer2"></div>
     </div>
-    <!-- Follow Cursor -->
-    <div class="load-container">
-      <div class="loading-screen"></div>
-    </div>
-    <!-- NAVBAR -->
-    <header>
-      <nav class="navbar">
-        <div class="container-navbar">
-          <!-- brand -->
-          <a class="navbar-brand" href="index.html"
-            ><img src="./assets/logo1.svg" alt=""
-          /></a>
-          <!-- Navlink-list -->
-          <div class="navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="navlink" href="arts.html"
-                  >藝術陶
-                  <div class="underline"></div
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="navlink active" href="works.html"
-                  >生活陶
-                  <div class="underline"></div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="navlink" href="classes.html"
-                  >課程教學
-                  <div class="underline"></div
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="navlink" href="contact.html"
-                  >聯絡我們
-                  <div class="underline"></div
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <!-- menu-btn -->
-          <a href="./menu.html" class="navbar-toggler">
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-          </a>
-        </div>
-      </nav>
-    </header>
-    <!-- NAVBAR -->
-
-    <!-- CONTAINER -->
-    <main>
-      <div class="left-fixed">
-        <p class="copyright roboto">© YOSHIPOTTERY ALL RIGHTS RESERVED.</p>
-      </div>
-      <div class="work-banner w-100"></div>
-      <div class="container">
-        <div class="work-title-wrap wrap-row">
-          <div class="work-title-box">
-            <span>生活陶器</span>
-            <h3>沙點白釉系列</h3>
-            <a href="#" class="btn-text">READ MORE</a>
-          </div>
-          <p class="w-50">
-            沙點白釉以最實用的白色並帶有細微沙點，適合承裝任何食物飲料。<br />
-            手工上釉每件作品均有不同流動表現。
-          </p>
-        </div>
-        <!-- works-card -->
-        <div class="works-list wrap-row">
-          <a class="works-card w-30" href="./work-temp.html">
-            <img src="./assets/works_01.png" alt="" />
-            <div>
-              <span class="align-left">作品名稱</span>
-              <span href="" class="tag caption btn-secondary">18cm</span>
-            </div>
-            <p class="price-text">NT$500</p>
-          </a>
-          <a class="works-card w-30">
-            <img src="./assets/works_02.png" alt="" />
-            <div>
-              <span class="align-left">作品名稱</span>
-              <span href="" class="tag caption btn-secondary">18cm</span>
-            </div>
-            <p class="price-text">NT$500</p>
-          </a>
-          <a class="works-card w-30">
-            <img src="./assets/works_03.png" alt="" />
-            <div>
-              <span class="align-left">作品名稱</span>
-              <span href="" class="tag caption btn-secondary">18cm</span>
-            </div>
-            <p class="price-text">NT$500</p>
-          </a>
-          <a class="works-card w-30">
-            <img src="./assets/works_01.png" alt="" />
-            <div>
-              <span class="align-left">作品名稱</span>
-              <span href="" class="tag caption btn-secondary">18cm</span>
-            </div>
-            <p class="price-text">NT$500</p>
-          </a>
-          <a class="works-card w-30">
-            <img src="./assets/works_02.png" alt="" />
-            <div>
-              <span class="align-left">作品名稱</span>
-              <span href="" class="tag caption btn-secondary">18cm</span>
-            </div>
-            <p class="price-text">NT$500</p>
-          </a>
-          <a class="works-card w-30">
-            <img src="./assets/works_03.png" alt="" />
-            <div>
-              <span class="align-left">作品名稱</span>
-              <span href="" class="tag caption btn-secondary">18cm</span>
-            </div>
-            <p class="price-text">NT$500</p>
-          </a>
-        </div>
-        <!-- works-series-card -->
-        <div class="works-series-wrap wrap-row">
-          <h4 class="sub-title">其他系列</h4>
-          <a class="w-45">
-            <img src="./assets/series_01.png" alt="" />
-            <h6 class="align-left">作品名稱</h6>
-            <p>霧藍綠釉低調不搶眼並透出些微土色，帶有自然的感覺</p>
-          </a>
-          <a class="w-45">
-            <img src="./assets/series_02.png" alt="" />
-            <h6 class="align-left">作品名稱</h6>
-            <p>霧藍綠釉低調不搶眼並透出些微土色，帶有自然的感覺</p>
-          </a>
-        </div>
-      </div>
-    </main>
-    <!-- CONTAINER -->
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container-footer">
-        <!-- sitemap -->
-        <div class="sitemap">
-          <a href="arts.html">藝術陶</a>
-          <a href="works.html">生活陶</a>
-          <a href="class.html">課程教學</a>
-          <a href="contact.html">聯絡我們</a>
-        </div>
-        <!-- info -->
-        <div class="info-box">
-          <a class="label" href="">950<br />台東縣台東市杭州街118號1樓</a>
-          <a class="roboto" href="">(+886) 921-271-867</a>
-          <a class="roboto" href="">yoshipottery@gmail.com</a>
-        </div>
+  </div>
+  <!-- =========== Cursor =========== -->
+  <!-- =========== NAVBR =========== -->
+  <header>
+    <nav class="navbar">
+      <div class="container-navbar">
         <!-- brand -->
-        <div class="brandbox dark-color">
-          <div class="follow-box">
-            <a
-              href="https://www.instagram.com/yoshipottery/"
-              target="_blank"
-              class="ig"
-              ><img src="./assets/instagram.svg" alt=""
-            /></a>
-            <span class="label">/</span>
-            <a
-              ref="https://www.facebook.com/yoshipottery"
-              target="_blank"
-              class="fb"
-              ><img src="./assets/facebook.svg" alt=""
-            /></a>
-          </div>
-          <h4>yoshi pottery</h4>
-          <p>生活器皿販售 / 陶藝課程教學</p>
+        <a class="navbar-brand" href="index.html"><img src="./assets/logo1.svg" alt=""></a>
+        <!-- Navlink-list -->
+        <div class="navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navlink" href="arts.html">藝術陶<div class="underline"></div></a>
+            </li>
+            <li class="nav-item">
+              <a class="navlink" href="works.html">生活陶
+                <div class="underline"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="navlink" href="classes.html">課程教學<div class="underline"></div></a>
+            </li>
+            <li class="nav-item">
+              <a class="navlink" href="contact.html">聯絡我們<div class="underline"></div></a>
+            </li>
+          </ul>
         </div>
+        <!-- menu-btn -->
+        <a href="./menu.html" class="navbar-toggler">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+        </a>
       </div>
-      <span class="copyright-footer"
-        >本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。
-        參考網站:</span
-      >
-      <a
-        class="roboto caption"
-        href="http://www.sakuzan.co.jp/product/urban.html"
-        >SAKUZAN URBAN</a
-      >
-    </footer>
-    <!-- FOOTER -->
+    </nav>
+  </header>
+  <!-- =========== NAVBR =========== -->
 
-    <script src="./js/cursor.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+  <!-- CONTAINER -->
+  <main>
+    <div class="left-fixed">
+      <p class="copyright roboto">© YOSHIPOTTERY ALL RIGHTS RESERVED.</p>
+    </div>
+    <div class="work-banner w-100"></div>
+    <div class="container">
+      <div class="work-title-wrap wrap-row">
+        <div class="work-title-box">
+          <span>生活陶器</span>
+          <h3>沙點白釉系列</h3>
+          <a href="#" class="btn-text">READ MORE</a>
+        </div>
+        <p class="w-50">
+          沙點白釉以最實用的白色並帶有細微沙點，適合承裝任何食物飲料。<br />
+          手工上釉每件作品均有不同流動表現。
+        </p>
+      </div>
+      <!-- works-card -->
+      <div class="works-list wrap-row">
+        <a class="works-card w-30" href="./work-temp.html">
+          <img src="./assets/works_01.png" alt="" />
+          <div>
+            <span class="align-left">作品名稱</span>
+            <span href="" class="tag caption btn-secondary">18cm</span>
+          </div>
+          <p class="price-text">NT$500</p>
+        </a>
+        <a class="works-card w-30">
+          <img src="./assets/works_02.png" alt="" />
+          <div>
+            <span class="align-left">作品名稱</span>
+            <span href="" class="tag caption btn-secondary">18cm</span>
+          </div>
+          <p class="price-text">NT$500</p>
+        </a>
+        <a class="works-card w-30">
+          <img src="./assets/works_03.png" alt="" />
+          <div>
+            <span class="align-left">作品名稱</span>
+            <span href="" class="tag caption btn-secondary">18cm</span>
+          </div>
+          <p class="price-text">NT$500</p>
+        </a>
+        <a class="works-card w-30">
+          <img src="./assets/works_01.png" alt="" />
+          <div>
+            <span class="align-left">作品名稱</span>
+            <span href="" class="tag caption btn-secondary">18cm</span>
+          </div>
+          <p class="price-text">NT$500</p>
+        </a>
+        <a class="works-card w-30">
+          <img src="./assets/works_02.png" alt="" />
+          <div>
+            <span class="align-left">作品名稱</span>
+            <span href="" class="tag caption btn-secondary">18cm</span>
+          </div>
+          <p class="price-text">NT$500</p>
+        </a>
+        <a class="works-card w-30">
+          <img src="./assets/works_03.png" alt="" />
+          <div>
+            <span class="align-left">作品名稱</span>
+            <span href="" class="tag caption btn-secondary">18cm</span>
+          </div>
+          <p class="price-text">NT$500</p>
+        </a>
+      </div>
+      <!-- works-series-card -->
+      <div class="works-series-wrap wrap-row">
+        <h4 class="sub-title">其他系列</h4>
+        <a class="w-45">
+          <img src="./assets/series_01.png" alt="" />
+          <h6 class="align-left">作品名稱</h6>
+          <p>霧藍綠釉低調不搶眼並透出些微土色，帶有自然的感覺</p>
+        </a>
+        <a class="w-45">
+          <img src="./assets/series_02.png" alt="" />
+          <h6 class="align-left">作品名稱</h6>
+          <p>霧藍綠釉低調不搶眼並透出些微土色，帶有自然的感覺</p>
+        </a>
+      </div>
+    </div>
+  </main>
+  <!-- CONTAINER -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-footer">
+      <!-- sitemap -->
+      <div class="sitemap">
+        <a href="arts.html">藝術陶</a>
+        <a href="works.html">生活陶</a>
+        <a href="class.html">課程教學</a>
+        <a href="contact.html">聯絡我們</a>
+      </div>
+      <!-- info -->
+      <div class="info-box">
+        <a class="label" href="">950<br />台東縣台東市杭州街118號1樓</a>
+        <a class="roboto" href="">(+886) 921-271-867</a>
+        <a class="roboto" href="">yoshipottery@gmail.com</a>
+      </div>
+      <!-- brand -->
+      <div class="brandbox dark-color">
+        <div class="follow-box">
+          <a href="https://www.instagram.com/yoshipottery/" target="_blank" class="ig"><img src="./assets/instagram.svg"
+              alt="" /></a>
+          <span class="label">/</span>
+          <a ref="https://www.facebook.com/yoshipottery" target="_blank" class="fb"><img src="./assets/facebook.svg"
+              alt="" /></a>
+        </div>
+        <h4>yoshi pottery</h4>
+        <p>生活器皿販售 / 陶藝課程教學</p>
+      </div>
+    </div>
+    <span class="copyright-footer">本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。
+      參考網站:</span>
+    <a class="roboto caption" href="http://www.sakuzan.co.jp/product/urban.html">SAKUZAN URBAN</a>
+  </footer>
+  <!-- FOOTER -->
+
+  <script src="./js/cursor.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

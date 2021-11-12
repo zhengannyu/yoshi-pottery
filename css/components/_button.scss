@@ -2,62 +2,82 @@
 .btn {
   padding: 12px 0;
   display: block;
+
   font: {
-    family: $noto-zh;
+    family: $noto-zh, $sans;
     size: 14px;
     weight: $light;
   }
+
   text-align: $align-center;
 
   &-primary {
     background-color: $primary-color;
     color: $secondary-color;
   }
+
   &-secondary {
     background-color: $secondary-color;
     color: $primary-color;
   }
+
   &-primary-outline {
     border: 1px solid $primary-color;
     color: $primary-color;
     transition: all 800ms ease-in-out 0s;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
   }
-  &:hover {
-    background-color: $primary-color;
-    color: $secondary-color;
-  }
+
   &-secondary-outline {
     border: 1px solid $secondary-color;
     color: $secondary-color;
     transition: all 800ms ease 0s;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
   }
-  &:hover {
-    background-color: $secondary-color;
-    color: $primary-color;
-  }
-//======= tag =======
 }
+
+//======= tag =======
 .tag {
   margin-left: 10px;
   padding: 4px 8px;
   border-radius: 4px;
 }
+
 //more
 .btn-more {
-  margin: 10px 20px 0px 0px;
-  padding: 8px 0px;
+  padding: 12px 16px;
   width: 150px;
   display: inline-block;
   position: relative;
-  border-bottom: 1px solid $primary-color;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: $dark-color;
+
   font: {
     family: 'Noto Serif TC', serif;
     size: $fs * 1.6;
     weight: $medium;
   }
-  line-height: 1;
-  letter-spacing: 2px;
-  color: $dark-color;
+
+  transition: all 0.6s ease;
+
+  .btn-bg {
+    width: 100%;
+    height: 1%;
+    background-color: $primary-color;
+    @include absolute(auto, 0, 0, 0);
+    transition: 400ms;
+    transition-timing-function: ease-out;
+    z-index: -1;
+  }
 
   //arrow-line
   &::before {
@@ -66,11 +86,12 @@
     height: 1px;
     background: $dark-color;
     position: absolute;
-    top: 30%;
+    top: 40%;
     margin-top: 2px;
     right: 0px;
     transition: all 0.3s ease;
   }
+
   //triangle
   &::after {
     content: "";
@@ -81,7 +102,27 @@
     transform: rotate(45deg);
     position: absolute;
     margin-top: -1px;
-    top: 30%;
+    top: 40%;
     right: 0px;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    color: #fff;
+
+    // background-color: $primary-color;
+    .btn-bg {
+      display: block;
+      height: 100%;
+    }
+
+    &::before {
+      width: 30px;
+      transform: translate3d(20px, 0, 0);
+    }
+
+    &::after {
+      transform: translate3d(20px, 0, 0) rotate(45deg);
+    }
   }
 }

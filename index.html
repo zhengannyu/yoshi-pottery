@@ -16,12 +16,15 @@
 </head>
 
 <body onload="followMouse();">
-  <!-- Follow Cursor -->
+  <!-- =========== Cursor =========== -->
+  <div class="cursor"></div>
   <div class="cursor-wrap">
-    <div class="cursor" id="ball"></div>
+    <div class="outer1" id="ball">
+      <div class="outer2"></div>
+    </div>
   </div>
-  <!-- Follow Cursor -->
-  <!-- NAVBAR -->
+  <!-- =========== Cursor =========== -->
+  <!-- =========== NAVBR =========== -->
   <header>
     <nav class="navbar">
       <div class="container-navbar">
@@ -54,16 +57,16 @@
       </div>
     </nav>
   </header>
-  <!-- NAVBAR -->
+  <!-- =========== NAVBR =========== -->
 
   <!-- CONTAINER -->
   <main>
     <div class="left-fixed">
       <p class="copyright roboto">© YOSHIPOTTERY ALL RIGHTS RESERVED.</p>
     </div>
-    <!-- landing section -->
+    <!-- =========== hero section =========== -->
     <section class="hero-section">
-      <div class="w-35">
+      <div class="w-30">
         <div class="slider-wrapper">
           <div class="slider-img">
             <img src="./assets/slider_01.jpg" alt="">
@@ -85,11 +88,10 @@
             </div>
           </div>
         </div>
-
       </div>
-      <div class="w-65">
+      <div class="w-70">
         <video autoplay muted loop id="brand-video" class="brand-video">
-          <source src="./assets/video_01.mp4" type="video/mp4">
+          <source src="./assets/yoshi-2.mp4" type="video/mp4">
         </video>
         <img src="./assets/logo2.svg" alt="">
       </div>
@@ -148,7 +150,10 @@
           透過觀察與創作<br>
           讓陶土以觀賞形式<br>
           進入生活中</h4>
-        <a href="" class="btn-more btn-more-text">VIEW ALL</a>
+        <a href="./arts.html" class="btn-more">VIEW ALL
+          <!-- <div class="more-text">VIEW ALL</div> -->
+          <div class="btn-bg"></div>
+        </a>
         <img src="./assets/Vector.svg" alt="">
       </div>
     </section>
@@ -255,12 +260,11 @@
         <p>生活器皿販售 / 陶藝課程教學</p>
       </div>
     </div>
-    <span class="copyright-footer">本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。 參考網站:</span>
-    <a class="roboto caption" href="http://www.sakuzan.co.jp/product/urban.html">SAKUZAN URBAN</a>
+    <span class="copyright-footer">本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品。</span>
   </footer>
   <!-- FOOTER -->
 
-  <script src="./js/follow-cursor.js"></script>
+  <script src="./js/cursor.js"></script>
   <script src="./js/horizonal-plugin.js"></script>
   <script src="./js/hr-scroll.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.1.9/dist/js/splide.cjs.min.js"></script>

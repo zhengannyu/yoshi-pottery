@@ -1,28 +1,30 @@
 //hero
 .hero-section {
+  margin: 0 auto;
   padding: 90px 5% 0px 5%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  // max-width: 1800px;
 
-  .w-35 {
+  .w-30 {
     margin-top: 100px;
   }
 
-  .w-65 {
-    padding-left: 48px;
+  .w-70 {
+    padding-left: 60px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 
-    img {
-      margin-top: 30px;
-      margin-right: 20px;
+    .brand-video {
+      max-width: 100%;
     }
-  }
 
-  .brand-video {
-    max-width: 100%;
+    img {
+      margin: -20px 20px 0 0;
+      z-index: 10;
+    }
   }
 }
 

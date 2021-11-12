@@ -10,9 +10,10 @@ $dark-color: #3C363B;
 
 body {
   margin: 0;
-  font-family: 'Noto Serif JP', serif;
+  font-family: $noto-zhs, $serif;
   line-height: 1;
   color: $primary-color;
+  cursor: none;
 }
 
 main {
@@ -40,6 +41,11 @@ a {
 img,
 video {
   max-width: 100%;
+}
+
+::selection {
+  background-color: $secondary-color;
+  color: $primary-color;
 }
 
 // .loading-screen 

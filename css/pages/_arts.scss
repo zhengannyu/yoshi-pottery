@@ -2,7 +2,7 @@
 
 .display-title {
   position: fixed;
-  top: 120px;
+  top: 80px;
   right: -1300px;
   font-size: 288px;
   color: $secondary-color;
@@ -12,20 +12,20 @@
 
 .art-title {
   margin: 200px 0px 100px 0px;
+  text-align: center;
 }
 
 .art-wrap {
-  margin-bottom: 200px;
+  margin: 120px auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 //arts-card
-.arts-card {
-  margin-bottom: 64px;
 
-  div {
-    display: flex;
-    justify-content: space-between;
-  }
+.arts-card {
+  display: block;
 }
 
 .arts-card-1 {
@@ -48,28 +48,20 @@
   margin: 250px 0px 0px 0px;
 }
 
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #00000066;
-  z-index: 2;
-  opacity: 0;
-}
+.thumbnail {
+  overflow: hidden;
 
-.lightbox img {
-  max-height: 80%;
-}
+  img {
+    width: 100%;
+    height: 100%;
+    transition: 800ms;
+  }
 
-.lightbox:target {
-  opacity: 1;
-  z-index: 1;
-  transition: 0.5s;
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
 }
 
 @media (max-width: 767.98px) {

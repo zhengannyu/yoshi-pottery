@@ -17,22 +17,30 @@
 $fs: 10px;
 $light: 300;
 $medium: 500;
-$noto-zh: 'Noto Sans JP', sans-serif;
-$noto-en: 'Noto Serif Display', serif;
-$roboto: 'Roboto', sans-serif;
+
+$serif: serif;
+$noto-zhs: 'Noto Serif JP';
+$noto-en: 'Noto Serif Display';
+
+$sans: sans-serif;
+$noto-zh: 'Noto Sans JP';
+$roboto: 'Roboto';
 
 //font-family
-.noto-sans {
+.noto {
   font: {
     size: $fs * 1.6;
     family: $noto-zh;
   }
+
   letter-spacing: 1px;
 }
+
 .roboto {
-  font-family: $roboto;
+  font-family: $roboto, $sans;
   letter-spacing: 1px;
 }
+
 //text-align
 $align-center: center;
 $align-left: left;
@@ -40,9 +48,11 @@ $align-left: left;
 .align-center {
   text-align: $align-center;
 }
+
 .align-left {
   text-align: $align-left;
 }
+
 //typographic
 h1,
 h2,
@@ -53,93 +63,114 @@ h6,
 p {
   margin: 0px;
 }
+
 h1 {
   font: {
-    family: $noto-zh;
+    family: $noto-zh, $sans;
     size: $fs * 2;
     weight: $light;
   }
+
   line-height: 1;
   letter-spacing: 8px;
   text-align: $align-center;
 }
+
 h2 {
   font: {
-    family: $noto-en;
+    family: $noto-en, $serif;
     size: $fs * 14.4;
     weight: $light;
   }
+
   line-height: 1;
   letter-spacing: 10px;
   text-align: $align-center;
   color: #F5F5F5;
 }
+
 h3 {
   font: {
     size: $fs * 4.8;
     weight: $medium;
   }
+
   line-height: 1;
   letter-spacing: 8px;
 }
+
 h4 {
   font: {
     size: $fs * 3.6;
     weight: $light;
   }
+
   line-height: 2;
   letter-spacing: 8px;
 }
+
 h5 {
   font: {
     size: $fs * 2.4;
     weight: $light;
   }
+
   line-height: 1.75;
   letter-spacing: 4px;
 }
+
 h6 {
   font: {
     size: $fs * 1.8;
     weight: $light;
   }
+
   line-height: 1;
   letter-spacing: 5px;
 }
+
 p {
   font: {
     size: $fs * 1.5;
     weight: $light;
   }
+
   line-height: 2;
   letter-spacing: 1px;
 }
+
 .price-text {
   font: {
-    family: $roboto;
+    family: $roboto, $sans;
     size: $fs * 1.8;
     weight: $light;
   }
+
   line-height: 1;
   letter-spacing: 3px;
 }
+
 .caption {
   font: {
-    family: $roboto;
+    family: $roboto, $sans;
     size: $fs * 1.2;
     weight: $light;
   }
+
   line-height: 1;
 }
+
 .label {
   font: {
-    family: $noto-zh;
+    family: $noto-zh, $sans;
     size: $fs * 1.4;
     weight: $light;
   }
+
   letter-spacing: 2px;
   line-height: 1.5;
 }
+
 @media (max-width: 767.98px) {
   h2 {
     font-size: $fs * 9.6;

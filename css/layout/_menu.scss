@@ -5,194 +5,201 @@
   flex-flow: row nowrap;
   position: fixed;
   background-color: $dark-color;
+}
 
-  //左邊圖片
-  .menubg {
-    width: 30%;
-    height: 100vh;
-    background: url(../assets/menu_img.jpg) no-repeat 50% 50%;
-    background-size: cover;
+//===== 左邊圖片 ===== 
+.menubg {
+  width: 30%;
+  height: 100vh;
+  background: url(../assets/menu_img.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+//===== 右邊容器 ===== 
+.menu-content {
+  padding: 60px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+//===== 上方連結 ===== 
+.menu-link-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.menulink {
+  flex: {
+    grow: 0;
+    shrink: 0;
+    basis: auto;
   }
 
-  //右邊容器
-  .menu-content {
-    padding: 60px;
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
+  font: {
+    family: $noto-zhs, $serif;
+    size: $fs * 3.2;
+    weight: 300;
+  }
 
-    //上方連結
-    .menu-link-wrap {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: space-between;
+  margin: 10px 0px;
+  padding: 10px 0;
+  letter-spacing: 8px;
+  color: $secondary-color;
+}
 
-      .menulink {
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: auto;
-        margin: 10px 0px;
-        padding: 10px 0;
-        font-family: 'Noto Serif TC', serif;
-        font-size: 32px;
-        letter-spacing: 8px;
-        font-weight: 100;
-        color: $secondary-color;
-      }
-    }
+//===== 上方連結 ===== 
+//===== 底部contact ===== 
+.menu-bottom-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+}
 
-    //底部contact
-    .menu-contact-wrap {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
+//title
+.menu-bottom-title {
+  display: block;
+  width: 100%;
+  color: $secondary-color;
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
 
-      //title
-      .item-1 {
-        display: block;
-        width: 100%;
-        color: $secondary-color;
-        font-size: 20px;
-        margin: 0 0 20px 0;
-      }
+//===== 底部區塊1 ===== 
+//address&phone
+.menu-bottom-box1 {
 
-      .menu-info-wrap {
-        width: 30%;
+  p {
+    color: $secondary-color;
+    margin: 0 0 16px 0;
+  }
+}
 
-        //address&phone
-        .item-2,
-        .item-3 {
-          color: $secondary-color;
-          margin: 0 0 16px 0;
-        }
-      }
+//fb&ig
+.menu-bottom-box2 {
+  margin: 0 60px;
 
-      .menu-sns-wrap {
-        width: 20%;
+  a {
+    margin: 0 0 16px 0;
+    display: block;
+  }
+}
 
-        //fb&ig
-        .item-4,
-        .item-5 {
-          margin: 0 0 16px 0;
-          display: block;
-        }
-      }
+.menu-bottom-box3 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 
-      .menu-btn-wrap {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
+  //btn
+  .btn {
+    max-height: 50px;
+    padding: 16px 42px;
+    letter-spacing: 2px;
+  }
 
-        //btn
-        .item-6,
-        .item-7 {
-          display: inline-block;
-          max-height: 50px;
-          margin: 0px 10px;
-          padding: 16px 42px;
-          font-family: 'Noto Serif TC', serif;
-          letter-spacing: 2px;
-        }
-      }
+  :first-child {
+    margin: 0 20px 0 0;
+  }
+}
 
-      //copyright
-      .item-8 {
-        display: block;
-        width: 100%;
-        color: $secondary-color;
-        opacity: 50%;
-        letter-spacing: 1px;
-        margin: 10px 0 0 0;
-      }
-    }
+//copyright
+.menu-copyright {
+  display: block;
+  width: 100%;
+  color: $secondary-color;
+  opacity: 50%;
+  letter-spacing: 1px;
+  margin: 10px 0 0 0;
+}
+
+//lg-desktop
+@media (min-width: 1500px) {
+  .menulink {
+    margin: 30px 0px;
+    font-size: $fs * 4.8;
   }
 }
 
 //desktops
 @media (max-width: 1199.98px) {
-  .menu-section {
+  .menu-content {
+    padding: 40px;
+  }
 
-    //右邊容器
-    .menu-content {
-      padding: 40px;
+  //底部contact
+  .menu-contact-wrap {
+    flex-flow: row wrap;
+    justify-content: flex-start;
 
-      //底部contact
-      .menu-contact-wrap {
-        flex-flow: row wrap !important;
-        justify-content: flex-start !important;
+    //title
+    .menu-bottom-title {
+      display: none;
+    }
+  }
 
-        //title
-        .item-1 {
-          display: none;
-        }
+  .menu-bottom-box1 {
+    p {
+      margin: 0 0 12px 0;
+    }
+  }
 
-        .menu-info-wrap {
-          width: 300px;
+  .menu-bottom-box2 {
+    margin: 0 20px;
+  }
 
-          //address&phone
-          .item-2,
-          .item-3 {
-            margin: 0 0 12px 0;
-          }
-        }
+  .menu-bottom-box3 {
+    .btn {
+      padding: 16px 32px;
+    }
 
-        .menu-sns-wrap {
-          width: 20%;
-        }
-
-        .menu-btn-wrap {
-          width: 40%;
-
-          //btn
-          .item-6,
-          .item-7 {
-            display: block;
-            width: auto;
-            margin: 0 10px 0 0;
-            padding: 16px 32px;
-            white-space: nowrap;
-          }
-        }
-      }
+    :first-child {
+      margin: 0 20px 0 0;
     }
   }
 }
 
 @media (max-width: 767.98px) {
-  .menu-section {
-    .menubg {
-      display: none;
-    }
+  .menubg {
+    display: none;
+  }
 
-    //右邊容器
-    .menu-content {
-      width: 100%;
+  .menu-content {
+    width: 100%;
+  }
 
-      .menu-contact-wrap {
-        .menu-btn-wrap {
-          width: 100%;
-        }
+  .menu-bottom-box3 {
+    width: 100%;
+  }
 
-        .item-8 {
-          font-size: 12px;
-        }
-      }
-    }
+  .menu-copyright {
+    font-size: 12px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .menu-section {
-    .menu-content {
-      padding: 20px;
+  .menu-content {
+    padding: 20px;
+  }
 
-      .menu-link-wrap {
-        .menulink {
-          font-size: 24px;
-        }
-      }
+  .menulink {
+    font-size: 24px;
+  }
+
+  .menu-bottom-box2 {
+    margin: 5px;
+  }
+
+  .menu-bottom-box3 {
+    .btn {
+      width: 48%;
+      padding: 16px 32px;
+    }
+
+    :first-child {
+      margin: 0 20px 0 0;
     }
   }
 }

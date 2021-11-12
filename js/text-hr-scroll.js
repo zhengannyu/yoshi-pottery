@@ -4,9 +4,7 @@ let line2 = document.querySelector('.display-title');
 
 //當scroll
 window.onscroll = () => {
-  let pos = window.scrollY - 800;
+  let pos = window.scrollY - 1300;
   //console.log(pos)
-
-  line1.style.left = `${pos}px`
   line2.style.right = `${pos}px`
 }

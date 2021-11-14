@@ -38,15 +38,30 @@ let followMouse = function followMouse() {
   ball.style.top = y + 'px';
 };
 
-//讓mouseCursor = .cursor
-//let mouseCursor = document.querySelector('.cursor');
-//獲取所有links
-//let links = document.querySelectorAll('a');
-
 //游標本身
-//window.addEventListener('mousemove', cursor);
-//讓cursor跟著滑鼠的座標pageY&pageX
-// function cursor(e) {
-//   mouseCursor.style.top = e.pageY + 'px';
-//   mouseCursor.style.left = e.pageX + 'px';
-// };
+let mouseCursor = document.querySelector('.cursor');
+window.addEventListener('mousemove', cursor);
+
+function cursor(event) {
+  mouseCursor.style.top = event.y + 'px';
+  mouseCursor.style.left = event.x + 'px';
+};
+
+window.addEventListener('mousedown', () => {
+  ball.classList.add('-small');
+})
+window.addEventListener('mouseup', () => {
+  ball.classList.remove('-small');
+})
+
+//獲取所有links
+const links = document.querySelectorAll('a, button, input, textarea, select');
+
+links.forEach(link => {
+  link.addEventListener('mouseenter', () => {
+
+  });
+  link.addEventListener('mouseleave', () => {
+
+  });
+});

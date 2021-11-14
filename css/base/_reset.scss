@@ -13,6 +13,8 @@ body {
   font-family: $noto-zhs, $serif;
   line-height: 1;
   color: $primary-color;
+  background-color: #fff;
+  cursor: none;
 }
 
 main {
@@ -34,6 +36,7 @@ a {
   font-size: 14px;
   text-decoration: none;
   color: $primary-color;
+  cursor: none;
 }
 
 img,
@@ -41,13 +44,14 @@ video {
   max-width: 100%;
 }
 
-body,
-a,
-input,
-textarea,
-button {
-  cursor: url(../assets/cursor.svg), auto !important;
-}
+// body,
+// a,
+// input,
+// select,
+// textarea,
+// button {
+//   cursor: url(../assets/cursor.svg), auto !important;
+// }
 
 ::selection {
   background-color: $secondary-color;

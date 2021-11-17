@@ -1,5 +1,4 @@
 //RWD ---OK
-
 .display-title {
   position: fixed;
   top: 80px;
@@ -90,15 +89,11 @@
 }
 
 @media (max-width: 575.98px) {
-  .art-wrap {
+  .arts-card {
+    width: 100%;
+  }
 
-    .w-30,
-    .w-40 {
-      width: 100%;
-    }
-
-    .arts-card-4 {
-      margin: 0px auto 40px;
-    }
+  .arts-card-4 {
+    margin: 0px auto 40px;
   }
 }

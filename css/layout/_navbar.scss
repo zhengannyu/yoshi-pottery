@@ -4,13 +4,14 @@
   position: fixed;
   top: 0%;
   z-index: 9;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
+  background-color: #ffffff40;
 }
 
 .container-navbar {
   width: 90%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

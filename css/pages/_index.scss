@@ -5,22 +5,22 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  // max-width: 1800px;
+}
 
-  .w-70 {
-    padding-left: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.videoBlock {
+  width: 70%;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
-    .brand-video {
-      max-width: 100%;
-    }
+  .brand-video {
+    max-width: 100%;
+  }
 
-    img {
-      margin: -20px 20px 0 0;
-      z-index: 10;
-    }
+  img {
+    margin: -20px 20px 0 0;
+    z-index: 10;
   }
 }
 
@@ -60,11 +60,11 @@
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
+}
 
-  .about-img {
-    // width: 50%;
-    margin-right: 20px;
-  }
+.about-img {
+  // width: 50%;
+  margin-right: 20px;
 }
 
 //works
@@ -72,27 +72,28 @@
   width: 100%;
   overflow: hidden;
   margin: 180px 0;
+}
 
-  .index-works-wrap {
-    display: flex;
-    justify-content: space-between;
-  }
+.index-works-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
 
-  .index-works-card {
-    p {
-      margin-top: $sp-12;
-    }
+.index-works-card {
+  p {
+    margin-top: $sp-12;
   }
+}
 
-  .index-works-card.left {
-    margin-top: 150px;
-    margin-left: -120px;
-  }
+.index-works-card.left {
+  margin-top: 150px;
+  margin-left: -120px;
+}
 
-  .index-works-card.right {
-    margin-top: 150px;
-    margin-right: -120px;
-  }
+.index-works-card.right {
+  margin-top: 150px;
+  margin-right: -120px;
 }
 
 //art
@@ -100,34 +101,68 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 180px;
+}
 
-  .art-l {
-    height: 540px;
-    background: url('../assets/arts.jpg') no-repeat 55% 50%;
-    background-size: cover;
+.art-l {
+  height: 540px;
+  background: url('../assets/arts.jpg') no-repeat 55% 50%;
+  background-size: cover;
+}
+
+.art-r {
+  position: relative;
+  padding-left: 64px;
+
+  h4 {
+    margin-bottom: 32px;
   }
 
-  .art-r {
-    position: relative;
-    padding-left: 64px;
-
-    h4 {
-      margin-bottom: 32px;
-    }
-
-    img {
-      position: absolute;
-      bottom: -10%;
-      left: -20%;
-      z-index: -1;
-    }
+  img {
+    position: absolute;
+    bottom: -10%;
+    left: -20%;
+    z-index: -1;
   }
 }
 
 @media (max-width: 996.98px) {
+
   .about-r {
     .w-70 {
       width: 90%;
+    }
+  }
+
+  .works-section {
+    margin: 80px 0;
+  }
+
+  .index-works-card.left {
+    margin-top: 90px;
+    margin-left: -40px;
+  }
+
+  .index-works-card.right {
+    margin-top: 90px;
+    margin-right: -40px;
+  }
+
+  .art-l {
+    width: 100%;
+  }
+
+  .art-r {
+    margin: 40px 0;
+    width: 74%;
+
+    h4 {
+      font-size: 24px;
+      line-height: 1.75;
+
+      br {
+        content: "";
+        display: none;
+      }
     }
   }
 }
@@ -146,90 +181,81 @@
   .about-r {
     width: 90%;
     margin: 0 auto;
-
-    .ab-imgbox {
-      margin-top: 40px;
-    }
   }
 
-  .works-section {
-    margin: 80px 0;
+  .ab-imgbox {
+    margin-top: 40px;
+  }
 
-    .index-works-wrap {
-      .index-works-card.left {
-        margin-top: 90px;
-        margin-left: -60px;
-      }
+  .index-works-wrap {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
 
-      .index-works-card.right {
-        margin-top: 90px;
-        margin-right: -60px;
-      }
-    }
+  .index-works-card {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .index-works-card.right,
+  .index-works-card.left {
+    margin: 0 auto;
   }
 
   .arts-section {
     margin-bottom: 40px;
   }
-
-  .art-l,
-  .art-r {
-    width: 100%;
-
-    h4 {
-      font-size: 24px;
-      line-height: 1.75;
-    }
-  }
 }
 
-@media screen and (max-width: 575.98px) {
+@media (max-width: 575.98px) {
   .hero-section {
-    padding: 90px 0 0 0;
+    padding: 60px 0 0 0;
+  }
 
-    .w-35 {
-      display: none;
-    }
+  .videoBlock {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 0px;
 
-    .w-65 {
-      width: 100%;
-      padding-left: 0px;
-
-      img {
-        margin-right: 0px;
-      }
+    img {
+      margin: 0;
+      padding: 0 20px;
     }
   }
 
-  .w-70 {
-    width: 90%;
+  .sliderBlock {
+    margin: 0 0 30px 0;
+    width: 100%;
+    // height: 100vh;
   }
 
   .about-r {
     width: 100%;
     margin: 0;
+    padding: 0 20px;
+  }
 
-    .ab-imgbox {
+  .ab-imgbox {
+    width: 100%;
+
+    img {
       width: 100%;
-
-      img {
-        width: 45%;
-      }
     }
   }
 
   .works-section {
     margin: 40px 0;
+  }
 
-    .index-works-wrap {
-      .index-works-card.left {
-        margin-top: 40px;
-        margin-left: -20px;
-      }
+  .art-r {
+    width: 100%;
 
-      .index-works-card.right {
-        margin-top: 40px;
-        margin-right: -20px;
+    h4 {
+      font-size: 16px;
+
+      br {
+        content: "";
+        display: block;
       }
     }
   }

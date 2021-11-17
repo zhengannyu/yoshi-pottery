@@ -48,11 +48,11 @@
   &:focus {
     outline: none;
 
-    // &+.input-label {
-    //   transform: translateY(-30px);
-    //   opacity: 70%;
-    //   font-size: 14px;
-    // }
+    & + .input-label {
+      transform: translateY(-30px);
+      opacity: 70%;
+      font-size: 14px;
+    }
   }
 }
 
@@ -62,12 +62,30 @@
   font-size: 14px;
 }
 
-select {
+.select {
+  margin: -7px 0 0 0;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid $dark-color;
+  border-width: 0 0 1px 0;
   font-family: 'Noto Serif TC', serif;
   font-size: 16px;
+  color: $dark-color;
   background-color: transparent;
   -webkit-appearance: none;
-  border-radius: 0px;
+  &::after {
+    content: '';
+    width: 600px;
+    height: 6px;
+    border: 3px solid $dark-color;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+    margin-top: -1px;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .input-label {
@@ -89,7 +107,7 @@ select {
   outline: none;
 
   &:focus {
-    &+.input-label {
+    & + .input-label {
       transform: translateY(-30px);
       opacity: 70%;
       font-size: 14px;

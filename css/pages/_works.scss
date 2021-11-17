@@ -27,13 +27,15 @@
 
 //works-list-card
 .works-list {
+  margin: 0 -28px;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .works-card {
-  padding: 0px;
+  padding: 0 28px;
   margin-bottom: 64px;
+  width: calc(100% / 3);
 
   div {
     margin: 15px 0px 10px 0px;

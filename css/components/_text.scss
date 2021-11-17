@@ -34,14 +34,26 @@
   margin: 0 0 0 5%;
   font-family: $noto-zh;
   font-size: $fs * 1.2;
-  color: #999;
+  color: #dbdbdb;
 }
 // ========== RWD ==========
-@media screen and (max-width: 575.98px) {
+
+@media (max-width: 767.98px) {
+  .copyright-footer {
+    text-align: center;
+    margin: 20px 20px 0 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .left-fixed {
+    @include fixed(auto, 10px, auto, auto);
+    padding: 0;
+    // text-align: $align-center;
+  }
   .copyright {
     display: block;
     position: absolute;
     width: 100vh;
     font-size: $fs * 1.2;
   }
-};
+}

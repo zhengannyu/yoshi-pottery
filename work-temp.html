@@ -135,7 +135,7 @@
   </main>
   <!-- CONTAINER -->
 
-  <!-- FOOTER -->
+  <!--  ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container-footer">
       <!-- sitemap -->
@@ -146,41 +146,44 @@
         <a href="contact.html">聯絡我們</a>
       </div>
       <!-- info -->
-      <div class="info-box">
-        <a class="label" href="">950<br>台東縣台東市杭州街118號1樓</a>
-        <a class="roboto" href="">(+886) 921-271-867</a>
-        <a class="roboto" href="">yoshipottery@gmail.com</a>
+      <div class="ft-infobox">
+        <div class="label">950<br />台東縣台東市杭州街118號1樓</div>
+        <div class="roboto">(+886) 921-271-867</div>
+        <div class="roboto">yoshipottery@gmail.com</div>
       </div>
       <!-- brand -->
       <div class="brandbox dark-color">
-        <div class="follow-box">
-          <a href="https://www.instagram.com/yoshipottery/" target=_blank class="ig"><img src="./assets/instagram.svg"
-              alt=""></a>
+        <div class="ft-follow-box">
+          <a href="https://www.instagram.com/yoshipottery/" target="_blank" class="ig"><img src="./assets/instagram.svg"
+              alt="" /></a>
           <span class="label">/</span>
-          <a ref="https://www.facebook.com/yoshipottery" target=_blank class="fb"><img src="./assets/facebook.svg"
-              alt=""></a>
+          <a ref="https://www.facebook.com/yoshipottery" target="_blank" class="fb"><img src="./assets/facebook.svg"
+              alt="" /></a>
         </div>
-        <h4>yoshi pottery</h4>
+        <h4>
+          yoshi pottery
+          <div class="ft-ball"></div>
+        </h4>
         <p>生活器皿販售 / 陶藝課程教學</p>
       </div>
     </div>
-    <span class="copyright-footer">本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。 參考網站:</span>
-    <a class="roboto caption" href="http://www.sakuzan.co.jp/product/urban.html">SAKUZAN URBAN</a>
+    <div class="copyright-footer">
+      本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品。
+    </div>
   </footer>
-  <!-- FOOTER -->
-
+  <!--  ========== FOOTER ========== -->
   <script src="./js/cursor.js"></script>
   //數字增減
   <script>
     function increaseValue() {
-      var value = parseInt(document.getElementById('number').value, 10);
+      let value = parseInt(document.getElementById('number').value, 10);
       value = isNaN(value) ? 0 : value;
       value++;
       document.getElementById('number').value = value;
     }
 
     function decreaseValue() {
-      var value = parseInt(document.getElementById('number').value, 10);
+      let value = parseInt(document.getElementById('number').value, 10);
       value = isNaN(value) ? 0 : value;
       value < 1 ? value = 1 : '';
       value--;

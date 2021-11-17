@@ -1,5 +1,5 @@
 .class-hero {
-  margin: 100px auto;
+  margin: 100px auto 300px auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -21,35 +21,49 @@
   z-index: -1;
 }
 
-.track {
-  width: 100%;
-  height: 1600px;
+
+/* ALL */
+.hrWrapper {
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.camera {
-  width: 100vw;
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  overflow: hidden;
+/* TRACK 藍色 */
+.classContainer {
+  padding: 0em 2em;
+  text-align: center;
 }
 
-.frame {
+/* FRAME */
+.classContainerSm {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  height: 100%;
-  transform: translateX(0);
+  width: 220vw;
+  margin-left: 200px;
+  margin-bottom: 150px;
 }
 
-.item {
-  padding: 35px 50px;
-  margin: 60px;
+/* ITEM */
+.classItem {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.classCard {
+  padding: 60px 50px;
+
   background-color: $secondary-color;
   width: 500px;
-  height: 600px;
+  height: 650px;
   position: relative;
   white-space: normal;
+
+  p,
+  h5 {
+    text-align: left;
+  }
 
   img {
     width: 290px;

@@ -45,23 +45,19 @@ window.addEventListener('mousemove', cursor);
 function cursor(event) {
   mouseCursor.style.top = event.y + 'px';
   mouseCursor.style.left = event.x + 'px';
-};
+}
 
 window.addEventListener('mousedown', () => {
   ball.classList.add('-small');
-})
+});
 window.addEventListener('mouseup', () => {
   ball.classList.remove('-small');
-})
+});
 
 //獲取所有links
-const links = document.querySelectorAll('a, button, input, textarea, select');
+let links = document.querySelectorAll('a, button, input, textarea, select');
 
-links.forEach(link => {
-  link.addEventListener('mouseenter', () => {
-
-  });
-  link.addEventListener('mouseleave', () => {
-
-  });
+links.forEach((link) => {
+  link.addEventListener('mouseenter', () => {});
+  link.addEventListener('mouseleave', () => {});
 });

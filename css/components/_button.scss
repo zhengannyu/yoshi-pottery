@@ -81,7 +81,7 @@
 
   //arrow-line
   &::before {
-    content: "";
+    content: '';
     width: 12px;
     height: 1px;
     background: $dark-color;
@@ -94,7 +94,7 @@
 
   //triangle
   &::after {
-    content: "";
+    content: '';
     width: 6px;
     height: 6px;
     border: 1px solid $dark-color;

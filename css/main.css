@@ -1326,6 +1326,7 @@ input {
 }
 
 .art-l {
+  width: 50%;
   height: 540px;
   background: url("../assets/arts.jpg") no-repeat 55% 50%;
   background-size: cover;

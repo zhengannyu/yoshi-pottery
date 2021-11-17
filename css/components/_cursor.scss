@@ -39,7 +39,7 @@
   transform-origin: 80% 80%;
   opacity: 0.3;
   transition: transform .02s ease-in-out;
-  animation: borderAnim 4s linear infinite;
+  // animation: borderAnim 4s linear infinite;
 }
 
 @keyframes borderAnim {
@@ -61,4 +61,18 @@
 
 .-small {
   transform: translate(-50%, -50%) scale(0.9);
+}
+
+@media (max-width: 767.98px) {
+  .cursor-wrap {
+    display: none;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .ball {
+    display: none;
+  }
 }

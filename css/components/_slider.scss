@@ -1,42 +1,87 @@
 .slider-wrapper {
+  margin-top: 60px;
   position: relative;
 }
 
-.slider-img {
-  // max-height: 550px;
-  overflow: hidden;
-}
-
 .slider-control-wrap {
-  @include absolute(auto, 0, 0, 0);
-  transform: translate3d(calc(100% + 60px), 0, 0);
+  width: 100%;
+  position: absolute;
+  top: calc(100% - 80px);
+  left: calc(100% + 60px);
 }
 
-.arrow-wrap {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-
-  .arrowbox {
-    margin: 0px 20px 20px 0px;
-    padding: 15px 0;
-    @include box-size(50px, 50px);
-    border-radius: 50%;
-    text-align: center;
-
-    &.focus {
-      background-color: $secondary-color;
-    }
-  }
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }
 
-.slider-number {
-  .roboto.number {
-    margin: 0px 20px 0px 0px;
-    color: $secondary-color;
-  }
+/* 數字導航列 */
+.swiper-pagination-bullet {
+  width: auto !important;
+  background-color: transparent;
+  cursor: none !important;
+  font-size: 20px;
+  padding: 0 5px;
+}
 
-  &-active {
-    color: $dark-color;
-  }
+/* 左右箭頭 */
+.swiper-button-next,
+.swiper-button-prev {
+  cursor: none;
+}
+
+.swiper-button-prev {
+  float: left;
+  left: -10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  margin: 0 30px 10px 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 0%;
+  border-radius: 50%;
+  cursor: none;
+  color: transparent;
+  transition: all 600ms ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #E6DFD9;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: ' ';
+  width: 50px;
+  height: 50px;
+}
+
+.swiper-button-prev:after {
+  background: url(../assets/arrow-left.svg) center no-repeat;
+}
+
+.swiper-button-next:after {
+  background: url(../assets/arrow-right.svg) center no-repeat;
+}
+
+// ---------------------work-tempalte
+.-thumbs {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.thumbsNav {
+  margin: 20px 10px 10px 0;
+  width: 60px !important;
+  height: 60px;
+  overflow: hidden;
+  border: 2px solid $secondary-color;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }

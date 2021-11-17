@@ -10,8 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Serif+Display:ital,wght@1,300&family=Noto+Serif+JP:wght@300;400&family=Roboto:wght@300&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./css/vendors/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="url-to-cdn/splide.min.css">
   <title>又煦陶作</title>
 </head>
 
@@ -65,27 +65,30 @@
     </div>
     <!-- =========== hero section =========== -->
     <section class="hero-section">
-      <div class="w-30">
-        <div class="slider-wrapper">
-          <div class="slider-img">
-            <img src="./assets/slider_01.jpg" alt="">
-          </div>
-          <div class="slider-control-wrap">
-            <div class="arrow-wrap">
-              <div class="arrowbox focus">
-                <img src="./assets/arrow-left.svg" alt="">
-              </div>
-              <div class="arrowbox">
-                <img src="./assets/arrow-right.svg" alt="">
-              </div>
+      <div class="slider-wrapper w-30">
+        <!--slider -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/slider_01.jpg" alt="">
             </div>
-            <div class="slider-number">
-              <span class="roboto number">01</span>
-              <span class="roboto number active">02</span>
-              <span class="roboto number">03</span>
-              <span class="roboto number">04</span>
+            <div class="swiper-slide">
+              <img src="./assets/slider_02.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slider_03.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slider_04.jpg" alt="">
             </div>
           </div>
+        </div>
+        <div class="slider-control-wrap">
+          <!-- Add Arrows -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination roboto"></div>
         </div>
       </div>
       <div class="w-70">
@@ -127,15 +130,15 @@
       <!-- index-works-card -->
       <div class="index-works-wrap sp--24">
         <div class="index-works-card w-35 left">
-          <img src="./assets/works_02.png" alt="">
+          <img src="./assets/green_01_3.png" alt="">
           <p class="align-center">作品名稱</p>
         </div>
         <div class="index-works-card w-35">
-          <img src="./assets/works_03.png" alt="">
+          <img src="./assets/white_03.png" alt="">
           <p class="align-center">作品名稱</p>
         </div>
         <div class="index-works-card w-35 right">
-          <img src="./assets/works_01.png" alt="">
+          <img src="./assets/green_p_01_1.png" alt="">
           <p class="align-center">作品名稱</p>
         </div>
       </div>
@@ -161,6 +164,57 @@
       </div>
     </section>
     <!-- arts section -->
+    <!-- =========== HR-SCROLL =========== -->
+    <div class="hrWrapper">
+      <div class="classContainer">
+        <div class="titlebox">
+          <h1>課程教學</h1>
+          <h2>Course</h2>
+        </div>
+        <div class="classContainerSm">
+          <div class="classItem">
+            <div class="classCard">
+              <p>學習以土球、土條、土板三大類基礎做陶技法，<br>
+                製作日常中會使用到的物品。</p>
+              <img src="./assets/class_01.png" alt="">
+              <h5>手捏器皿</h5>
+            </div>
+          </div>
+          <div href="" class="classItem">
+            <div class="classCard">
+              <p>學習從掌上型小陶偶，
+                到中型陶偶挖空或土條製作技法，配合化妝土上色。</p>
+              <img src="./assets/class_02.png" alt="">
+              <h5>陶偶雕塑</h5>
+            </div>
+          </div>
+          <div href="" class="classItem">
+            <div class="classCard">
+              <p>學習以轆轤製作杯、碗、盤形，技巧較高，表面質感較為圓滑平整。</p>
+              <img src="./assets/class_03.png" alt="">
+              <h5>基礎拉胚</h5>
+            </div>
+          </div>
+          <div href="" class="classItem">
+            <div class="classCard">
+              <p>學習從掌上型小陶偶，
+                到中型陶偶挖空或土條製作技法，配合化妝土上色。</p>
+              <img src="./assets/class_04.png" alt="">
+              <h5>進階創作</h5>
+            </div>
+          </div>
+          <div href="" class="classItem">
+            <div class="classCard">
+              <p>學習從掌上型小陶偶，
+                到中型陶偶挖空或土條製作技法，配合化妝土上色。</p>
+              <img src="./assets/class_05代換.png" alt="">
+              <h5>體驗 / 團體課</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =========== HR-SCROLL =========== -->
     <!-- contact section -->
     <section class="contact-section">
       <div class="index-contact-wrap wrap-row">
@@ -170,9 +224,9 @@
             <h1 class="align-left">聯絡我們</h1>
             <p>工作室採預約制，如預參觀請來電洽詢。</p>
             <div class="info-box">
-              <a href="" class="noto-sans">950<br>台東縣台東市杭州街118號1樓</a>
-              <a href="" class="roboto">(+886) 921-271-867</a>
-              <a href="" class="roboto">yoshipottery@gmail.com</a>
+              <div href="" class="noto-sans">950<br>台東縣台東市杭州街118號1樓</div>
+              <div href="" class="roboto">(+886) 921-271-867</div>
+              <div href="" class="roboto">yoshipottery@gmail.com</div>
               <div class="follow-box">
                 <span class="roboto">follow us</span>
                 <a href="https://www.instagram.com/yoshipottery/" target=_blank class="ig"><img
@@ -228,10 +282,35 @@
     </div>
   </footer>
   <!--  ========== FOOTER ========== -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+  <!-- vendorstart -->
+  <script src="./js/vendor/swiper-bundle.min.js"></script>
+  <script src="./js/vendor/gsap.js"></script>
+  <script src="./js/vendor/ScrollTrigger.js"></script>
+  <!-- vendorend -->
   <script src="./js/HScroll-GSAP.js"></script>
   <script src="./js/cursor.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 60,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<span class="${className}"> 0${index + 1} </span>`;
+        },
+      },
+    });
+  </script>
 </body>
 
 </html>

@@ -1,35 +1,108 @@
+//contact
+.contact-section {
+  margin: 120px 0;
+}
+
+.index-contact-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+//----------- contact 左側 -----------
+.contact-l {
+  width: 40%;
+  color: $dark-color;
+  position: relative;
+  overflow: hidden;
+
+  //title
+  h2 {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+  }
+}
+
+// contact - textContent
+.text-wrap {
+  margin: 100px 0 0 15%;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.info-box {
+  div {
+    padding: 6px 0px;
+    line-height: 1.5;
+    color: $dark-color;
+  }
+}
+
+.follow-box {
+  margin: 40px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .ig {
+    margin: 5px 15px 0px 40px;
+  }
+
+  .fb {
+    margin: 5px 15px 0px 10px;
+  }
+}
+
+.contact-img {
+  width: 60%;
+  height: 400px;
+  background: url(../assets/contact.jpg) no-repeat 55% 50%;
+  background-size: cover;
+}
+
+
 .contact-wrap {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
 }
 
+//----------- contact 右側 -----------
 .contact-r {
   width: 50%;
-
-  .contact-txt {
-    margin: 32px 32px;
-  }
 }
 
+.contact-txt {
+  margin: 32px 32px;
+}
+
+//---------- form ------------
 .form {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
+}
 
-  .form-row {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
+.form-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
-    .form-column {
-      padding: 24px 32px;
-      flex-basis: 50%;
-      flex-grow: 1;
-      flex-shrink: 1;
-    }
-  }
+.form-column {
+  padding: 24px 32px;
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 //input
@@ -48,7 +121,7 @@
   &:focus {
     outline: none;
 
-    & + .input-label {
+    &+.input-label {
       transform: translateY(-30px);
       opacity: 70%;
       font-size: 14px;
@@ -73,6 +146,7 @@
   color: $dark-color;
   background-color: transparent;
   -webkit-appearance: none;
+
   &::after {
     content: '';
     width: 600px;
@@ -107,7 +181,7 @@
   outline: none;
 
   &:focus {
-    & + .input-label {
+    &+.input-label {
       transform: translateY(-30px);
       opacity: 70%;
       font-size: 14px;
@@ -129,87 +203,101 @@
   cursor: pointer;
 }
 
-// .contact-section
-// .contact-wrap
-// .contact-l
-// .contact-r
-//tablets
+//-------------- RWD --------------
 @media (max-width: 991.98px) {
-  .contact-section {
-    .contact-wrap {
-      flex-flow: column wrap;
-      justify-content: center;
+  .contact-wrap {
+    flex-flow: column wrap;
+    justify-content: center;
+  }
 
-      .contact-l {
-        width: 100%;
+  .contact-l {
+    width: 100%;
+  }
 
-        .text {
-          margin-left: 14%;
-        }
-      }
+  .text {
+    margin-left: 14%;
+  }
 
-      .contact-r {
-        width: 80%;
-        margin: 0 auto;
-      }
-    }
+  .contact-r {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 767.98px) {
-  .contact-section {
-    .contact-wrap {
-      .contact-l {
-        .text {
-          margin-left: 40px;
-        }
-      }
-
-      .contact-r {
-        width: 100%;
-        padding: 0 20px;
-
-        .contact-txt {
-          margin: 32px 10px;
-          font-size: 18px;
-        }
-
-        .form {
-          .form-row {
-            .form-column {
-              padding: 24px 10px;
-            }
-          }
-        }
-      }
+  .contact-l {
+    .text {
+      margin-left: 40px;
     }
+  }
+
+  .contact-section {
+    margin-top: 0;
+  }
+
+  .index-contact-wrap {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .info-box {
+    width: 100%;
+  }
+
+  .follow-box {
+    margin: 20px 0px;
+  }
+
+  .contact-l {
+    width: 100%;
+    padding: 0 20px;
+
+    .text-wrap {
+      margin: 40px 0 0 0;
+    }
+  }
+
+  .contact-img {
+    width: 100%;
+  }
+
+  .contact-r {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .contact-txt {
+    margin: 32px 10px;
+    font-size: 18px;
+  }
+
+  .form-column {
+    padding: 24px 10px;
   }
 }
 
 //portrait phones
 @media (max-width: 575.98px) {
-  .contact-section {
-    .contact-wrap {
-      .contact-r {
-        .contact-txt {
-          font-size: 14px;
-        }
+  .contact-wrap {
+    margin: 100px auto;
+  }
 
-        .form {
-          .form-row {
-            flex-flow: row wrap;
+  .contact-txt {
+    font-size: 14px;
+    margin: 12px 8px;
+  }
 
-            .form-column {
-              padding: 24px 10px;
-              flex-basis: 100%;
-            }
-          }
+  .form-row {
+    flex-flow: row wrap;
+  }
 
-          .submit-btn {
-            margin: 10px;
-          }
-        }
-      }
-    }
+  .form-column {
+    padding: 24px 0px;
+    flex-basis: 100%;
+  }
+
+  .submit-btn {
+    margin: 10px;
   }
 }

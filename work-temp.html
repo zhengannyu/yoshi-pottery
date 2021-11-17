@@ -58,26 +58,24 @@
   </header>
   <!-- =========== NAVBR =========== -->
 
-  <!-- CONTAINER -->
+  <!-- =========== CONTAINER =========== -->
   <main>
-
     <div class="container">
       <section class="work-detail-wrap">
         <div class="work-img-wrap">
           <div class="work-slider-viewport">
             <div class="work-slider-container">
-              <div class="work-slider-img" style="background-image: url(./assets/works_01.png);">
-              </div>
-              <div class="work-slider-img" style="background-image: url(./assets/works_01.png);">
-              </div>
-              <div class="work-slider-img" style="background-image: url(./assets/works_01.png);">
-              </div>
+              <div class="work-slider-img" style="background-image: url(./assets/white_02_1.jpg);"></div>
+              <div class="work-slider-img" style="background-image: url(./assets/white_02_2.jpg);"></div>
+              <div class="work-slider-img" style="background-image: url(./assets/white_02_3.jpg);"></div>
+              <div class="work-slider-img" style="background-image: url(./assets/white_02_4.jpg);"></div>
             </div>
           </div>
           <div class="work-slider-page">
-            <div class="work-single-page" data-num="1" style="background-image: url(./assets/works_01.png)"></div>
-            <div class="work-single-page" data-num="2" style="background-image: url(./assets/works_01.png)"></div>
-            <div class="work-single-page" data-num="13" style="background-image: url(./assets/works_01.png)"></div>
+            <div class="work-single-page" data-num="1" style="background-image: url(./assets/white_02_1.jpg)"></div>
+            <div class="work-single-page" data-num="2" style="background-image: url(./assets/white_02_2.jpg)"></div>
+            <div class="work-single-page" data-num="13" style="background-image: url(./assets/white_02_3.jpg)"></div>
+            <div class="work-single-page" data-num="13" style="background-image: url(./assets/white_02_4.jpg)"></div>
           </div>
         </div>
         <div class="work-info-wrap">
@@ -173,23 +171,7 @@
   </footer>
   <!--  ========== FOOTER ========== -->
   <script src="./js/cursor.js"></script>
-  //數字增減
-  <script>
-    function increaseValue() {
-      let value = parseInt(document.getElementById('number').value, 10);
-      value = isNaN(value) ? 0 : value;
-      value++;
-      document.getElementById('number').value = value;
-    }
-
-    function decreaseValue() {
-      let value = parseInt(document.getElementById('number').value, 10);
-      value = isNaN(value) ? 0 : value;
-      value < 1 ? value = 1 : '';
-      value--;
-      document.getElementById('number').value = value;
-    }
-  </script>
+  <script src="./js/value.js"></script>
 </body>
 
 </html>

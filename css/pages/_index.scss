@@ -149,7 +149,8 @@
   }
 
   .art-l {
-    width: 100%;
+    width: 90%;
+    background-size: contain;
   }
 
   .art-r {
@@ -246,6 +247,10 @@
 
   .works-section {
     margin: 40px 0;
+  }
+
+  .art-l {
+    width: 90%;
   }
 
   .art-r {

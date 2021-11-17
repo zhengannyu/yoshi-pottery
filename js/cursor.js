@@ -1,14 +1,14 @@
 //跟隨的球
-let $ = document.querySelector.bind(document);
-let $on = document.addEventListener.bind(document);
+let R = document.querySelector.bind(document);
+let Ron = document.addEventListener.bind(document);
 
 let xmouse, ymouse;
-$on('mousemove', function (e) {
+Ron('mousemove', function (e) {
   xmouse = e.clientX || e.pageX;
   ymouse = e.clientY || e.pageY;
 });
 
-let ball = $('#ball');
+let ball = R('#ball');
 let x = void 0,
   y = void 0,
   dx = void 0,

@@ -1381,7 +1381,11 @@ input {
     margin-top: 90px;
     margin-right: -40px;
   }
+  .arts-section .titlebox {
+    margin: 0 0 20px 0;
+  }
   .art-l {
+    height: 300px;
     width: 90%;
     background-size: contain;
   }

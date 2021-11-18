@@ -86,3 +86,13 @@
   background-position: 50%;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 767.98px) {
+  .slider-control-wrap {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: calc(100% - 80px);
+    left: calc(100% + 60px);
+  }
+}

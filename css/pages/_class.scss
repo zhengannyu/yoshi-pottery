@@ -56,12 +56,14 @@
 }
 
 .classCard {
-  padding: 60px 50px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 30px;
   background-color: $secondary-color;
-  width: 500px;
-  height: 650px;
+  width: 40vw;
+  height: 600px;
   position: relative;
-  white-space: normal;
 
   p,
   h5 {
@@ -69,7 +71,7 @@
   }
 
   img {
-    width: 290px;
+    width: 70%;
     align-self: center;
     margin: 20px 50px;
   }
@@ -94,16 +96,15 @@
     width: 90%;
     height: 200px;
   }
-}
 
-@media (max-width: 575.98px) {
   .hrWrapper {
     display: none;
   }
 
   .courseMobile {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
     margin-top: -200px;
   }
 
@@ -127,6 +128,14 @@
       width: 280px;
       align-self: center;
     }
+  }
+}
+
+@media (max-width: 575.98px) {
+
+
+  .courseMobile {
+    flex-flow: column wrap;
   }
 
   .class-txt {

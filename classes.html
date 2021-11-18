@@ -48,14 +48,46 @@
           </ul>
         </div>
         <!-- menu-btn -->
-        <a href="./menu.html" class="navbar-toggler">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-        </a>
+        <div class="barres">
+          <div class="hamburger1"></div>
+          <div class="hamburger2"></div>
+        </div>
       </div>
     </nav>
   </header>
   <!-- =========== NAVBR =========== -->
+  <!--  ========== MENU ========== -->
+  <div class="menu">
+    <div class="menubg"></div>
+    <div class="menu-content">
+      <ul class="menu-link-wrap">
+        <li> <a href="./index.html" class="menulink">首頁</a></li>
+        <li> <a href="./arts.html" class="menulink">藝術陶</a></li>
+        <li> <a href="./works.html" class="menulink">生活陶</a></li>
+        <li> <a href="./classes.html" class="menulink">課程教學</a></li>
+        <li> <a href="./contact.html" class="menulink">聯絡我們</a></li>
+      </ul>
+
+      <div class="menu-bottom-wrap">
+        <h6 class="menu-bottom-title">聯絡我們</h6>
+        <div class="menu-bottom-box1">
+          <p class="label">〒950 台東縣台東市杭州街118號1樓</p>
+          <p class="label">(+886) 921-271-867</p>
+        </div>
+        <div class="menu-bottom-box2">
+          <a href="https://www.instagram.com/yoshipottery/" target=_blank> <img src="./assets/instagram-02.svg"
+              alt=""></a>
+          <a href="https://www.facebook.com/yoshipottery" target=_blank> <img src="./assets/facebook-02.svg" alt=""></a>
+        </div>
+        <div class="menu-bottom-box3">
+          <a href="./contact.html" class="btn btn-secondary-outline">報名課程</a>
+          <a href="./contact.html" class="btn btn-secondary-outline">陶器訂製</a>
+        </div>
+        <p class="menu-copyright label">© YOSHIPOTTERY ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+  </div>
+  <!--  ========== MENU ========== -->
   <!-- CONTAINER -->
   <main>
     <!-- =========== BANNER =========== -->
@@ -90,7 +122,7 @@
               <h5>手捏器皿</h5>
             </div>
           </a>
-          <a href="" class="classItem">
+          <a href="./class-temp.html" class="classItem">
             <div class="classCard">
               <p>學習從掌上型小陶偶，
                 到中型陶偶挖空或土條製作技法，配合化妝土上色。</p>
@@ -134,7 +166,7 @@
           <img src="./assets/class_01.png" alt="">
           <h5>手捏器皿</h5>
         </a>
-        <a href="" class="courseCard">
+        <a href="./class-temp.html" class="courseCard">
           <p>學習從掌上型小陶偶，
             到中型陶偶挖空或土條製作技法，配合化妝土上色。</p>
           <img src="./assets/class_02.png" alt="">
@@ -173,7 +205,7 @@
       </div>
       <!-- info -->
       <div class="ft-infobox">
-        <div class="label">950<br />台東縣台東市杭州街118號1樓</div>
+        <div class="label">950<br>台東縣台東市杭州街118號1樓</div>
         <div class="roboto">(+886) 921-271-867</div>
         <div class="roboto">yoshipottery@gmail.com</div>
       </div>
@@ -181,10 +213,10 @@
       <div class="brandbox dark-color">
         <div class="ft-follow-box">
           <a href="https://www.instagram.com/yoshipottery/" target="_blank" class="ig"><img src="./assets/instagram.svg"
-              alt="" /></a>
+              alt=""></a>
           <span class="label">/</span>
           <a ref="https://www.facebook.com/yoshipottery" target="_blank" class="fb"><img src="./assets/facebook.svg"
-              alt="" /></a>
+              alt=""></a>
         </div>
         <h4>
           yoshi pottery
@@ -198,13 +230,15 @@
     </div>
   </footer>
   <!--  ========== FOOTER ========== -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script> -->
+  <!--  ========== VENDORS ========== -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <script src="./js/vendor/gsap.js"></script>
+  <!--  ========== VENDORS ========== -->
   <script src="./js/vendor/ScrollTrigger.js"></script>
   <script src="./js/HScroll-GSAP.js"></script>
   <script src="./js/cursor.js"></script>
-  <script src="./js/hr-scroll.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

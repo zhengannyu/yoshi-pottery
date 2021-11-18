@@ -2,16 +2,17 @@
 <html lang="zh-Hant-TW">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Serif+Display:ital,wght@1,300&family=Noto+Serif+JP:wght@300;400&family=Roboto:wght@300&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./css/main.css" />
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
   <title>聯絡我們｜又煦陶作</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body onload="followMouse();">
@@ -26,7 +27,7 @@
     <nav class="navbar">
       <div class="container-navbar">
         <!-- brand -->
-        <a class="navbar-brand" href="index.html"><img src="./assets/logo1.svg" alt="" /></a>
+        <a class="navbar-brand" href="index.html"><img src="./assets/logo1.svg" alt=""></a>
         <!-- Navlink-list -->
         <div class="navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
@@ -50,14 +51,46 @@
           </ul>
         </div>
         <!-- menu-btn -->
-        <a href="./menu.html" class="navbar-toggler">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-        </a>
+        <div class="barres">
+          <div class="hamburger1"></div>
+          <div class="hamburger2"></div>
+        </div>
       </div>
     </nav>
   </header>
   <!-- =========== NAVBR =========== -->
+  <!--  ========== MENU ========== -->
+  <div class="menu">
+    <div class="menubg"></div>
+    <div class="menu-content">
+      <ul class="menu-link-wrap">
+        <li> <a href="./index.html" class="menulink">首頁</a></li>
+        <li> <a href="./arts.html" class="menulink">藝術陶</a></li>
+        <li> <a href="./works.html" class="menulink">生活陶</a></li>
+        <li> <a href="./classes.html" class="menulink">課程教學</a></li>
+        <li> <a href="./contact.html" class="menulink">聯絡我們</a></li>
+      </ul>
+
+      <div class="menu-bottom-wrap">
+        <h6 class="menu-bottom-title">聯絡我們</h6>
+        <div class="menu-bottom-box1">
+          <p class="label">〒950 台東縣台東市杭州街118號1樓</p>
+          <p class="label">(+886) 921-271-867</p>
+        </div>
+        <div class="menu-bottom-box2">
+          <a href="https://www.instagram.com/yoshipottery/" target=_blank> <img src="./assets/instagram-02.svg"
+              alt=""></a>
+          <a href="https://www.facebook.com/yoshipottery" target=_blank> <img src="./assets/facebook-02.svg" alt=""></a>
+        </div>
+        <div class="menu-bottom-box3">
+          <a href="./contact.html" class="btn btn-secondary-outline">報名課程</a>
+          <a href="./contact.html" class="btn btn-secondary-outline">陶器訂製</a>
+        </div>
+        <p class="menu-copyright label">© YOSHIPOTTERY ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+  </div>
+  <!--  ========== MENU ========== -->
   <!-- CONTAINER -->
   <main>
     <div class="left-fixed">
@@ -71,36 +104,36 @@
             <h1 class="align-left">聯絡我們</h1>
             <p>工作室採預約制，如預參觀請來電洽詢。</p>
             <div class="info-box">
-              <div href="" class="noto-sans">950<br />台東縣台東市杭州街118號1樓</div>
+              <div href="" class="noto-sans">950<br>台東縣台東市杭州街118號1樓</div>
               <div href="" class="roboto">(+886) 921-271-867</div>
               <div href="" class="roboto">yoshipottery@gmail.com</div>
               <div class="follow-box">
                 <span class="roboto">follow us</span>
                 <a href="https://www.instagram.com/yoshipottery/" target="_blank" class="ig"><img
-                    src="./assets/instagram.svg" alt="" /></a>
+                    src="./assets/instagram.svg" alt=""></a>
                 <span class="label">/</span>
                 <a href="https://www.facebook.com/yoshipottery" target="_blank" class="fb"><img
-                    src="./assets/facebook.svg" alt="" /></a>
+                    src="./assets/facebook.svg" alt=""></a>
               </div>
             </div>
           </div>
         </div>
         <div class="contact-r">
           <h5 class="contact-txt dark-color">
-            提供多種內容陶藝課程、陶製品商業與客製化服務，<br />
+            提供多種內容陶藝課程、陶製品商業與客製化服務，<br>
             歡迎填寫下列表單與我聯繫。
           </h5>
           <div class="form">
             <div class="form-row">
               <div class="form-column">
                 <div class="input-string">
-                  <input class="input" type="text" />
+                  <input class="input" type="text">
                   <label aria-label="Name" class="input-label">姓 名</label>
                 </div>
               </div>
               <div class="form-column">
                 <div class="input-string">
-                  <input class="input" type="text" />
+                  <input class="input" type="text">
                   <label aria-label="Name" class="input-label">聯絡電話</label>
                 </div>
               </div>
@@ -108,7 +141,7 @@
             <div class="form-row">
               <div class="form-column">
                 <div class="input-string">
-                  <input class="input" type="text" />
+                  <input class="input" type="text">
                   <label aria-label="Name" class="input-label">EMAIL</label>
                 </div>
               </div>
@@ -153,7 +186,7 @@
       </div>
       <!-- info -->
       <div class="ft-infobox">
-        <div class="label">950<br />台東縣台東市杭州街118號1樓</div>
+        <div class="label">950<br>台東縣台東市杭州街118號1樓</div>
         <div class="roboto">(+886) 921-271-867</div>
         <div class="roboto">yoshipottery@gmail.com</div>
       </div>
@@ -161,10 +194,10 @@
       <div class="brandbox dark-color">
         <div class="ft-follow-box">
           <a href="https://www.instagram.com/yoshipottery/" target="_blank" class="ig"><img src="./assets/instagram.svg"
-              alt="" /></a>
+              alt=""></a>
           <span class="label">/</span>
           <a ref="https://www.facebook.com/yoshipottery" target="_blank" class="fb"><img src="./assets/facebook.svg"
-              alt="" /></a>
+              alt=""></a>
         </div>
         <h4>
           yoshi pottery
@@ -178,8 +211,13 @@
     </div>
   </footer>
   <!--  ========== FOOTER ========== -->
-  <script src="./js/labeltrans.js"></script>
+  <!--  ========== VENDORS ========== -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <!--  ========== VENDORS ========== -->
+  <script src="./js/labelTrans.js"></script>
   <script src="./js/cursor.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

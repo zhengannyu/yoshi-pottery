@@ -48,6 +48,7 @@
   display: flex;
   flex-flow: row nowrap;
   position: fixed;
+  top: 0;
   background-color: $dark-color;
   z-index: 20;
 }

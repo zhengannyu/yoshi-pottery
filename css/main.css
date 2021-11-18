@@ -578,18 +578,6 @@ input {
           transform: translate(-50%, -50%) scale(0.9);
 }
 
-@media (max-width: 767.98px) {
-  .cursor-wrap {
-    display: none;
-  }
-  .cursor {
-    display: none;
-  }
-  .ball {
-    display: none;
-  }
-}
-
 .sliderBlock {
   width: 30%;
   margin-top: 100px;
@@ -839,6 +827,7 @@ input {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   position: fixed;
+  top: 0;
   background-color: #3C363B;
   z-index: 20;
 }
@@ -2359,12 +2348,21 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .classCard {
-  padding: 60px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px;
   background-color: #E6DFD9;
-  width: 500px;
-  height: 650px;
+  width: 40vw;
+  height: 600px;
   position: relative;
-  white-space: normal;
 }
 
 .classCard p,
@@ -2373,7 +2371,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .classCard img {
-  width: 290px;
+  width: 70%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2400,9 +2398,6 @@ input[type=number]::-webkit-outer-spin-button {
     width: 90%;
     height: 200px;
   }
-}
-
-@media (max-width: 575.98px) {
   .hrWrapper {
     display: none;
   }
@@ -2410,10 +2405,13 @@ input[type=number]::-webkit-outer-spin-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-top: -200px;
   }
   .courseCard {
@@ -2443,6 +2441,15 @@ input[type=number]::-webkit-outer-spin-button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .courseMobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
   }
   .class-txt h3 {
     font-size: 24px;

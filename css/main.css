@@ -2375,30 +2375,25 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .classCard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 30px;
   background-color: #E6DFD9;
-  width: 40vw;
+  width: 35vw;
   height: 600px;
   position: relative;
 }
 
-.classCard p,
+.classCard p {
+  height: 80px;
+  text-align: left;
+}
+
 .classCard h5 {
+  margin: 20px 0 0 0;
   text-align: left;
 }
 
 .classCard img {
-  width: 70%;
+  width: 60%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2407,6 +2402,39 @@ input[type=number]::-webkit-outer-spin-button {
 
 .courseMobile {
   display: none;
+}
+
+@media (max-width: 1199.98px) {
+  .classCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px;
+    background-color: #E6DFD9;
+    width: 40vw;
+    height: 600px;
+    position: relative;
+  }
+  .classCard p {
+    height: auto;
+  }
+  .classCard h5 {
+    margin: 20px 0 0 0;
+  }
+  .classCard img {
+    width: 70%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 20px 50px;
+  }
 }
 
 @media (max-width: 768.02px) {

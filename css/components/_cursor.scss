@@ -7,8 +7,6 @@
   z-index: 30;
   overflow: hidden;
   pointer-events: none;
-  /* 寫在容器才會影響下面的 */
-  mix-blend-mode: difference;
 }
 
 .cursor {

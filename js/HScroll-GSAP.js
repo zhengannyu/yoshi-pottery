@@ -18,6 +18,7 @@ scroll_tl.to(classItems, {
     trigger: ".classContainerSm",
     start: "center center",
     pin: true,
+
     scrub: 1,
     snap: 1 / (classItems.length - 1),
     end: () => `+=4320`,
